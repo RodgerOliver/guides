@@ -15,6 +15,8 @@ Vim is an cli IDE.
 - `:echo expand('%:t')`: echo current file name.
 - `: <ctrl + P>`: move history up.
 - `: <ctrl + N>`: move history down.
+- `:reg`: shows all registers.
+- `"1p`: paste register 1.
 
 ## Motions
 - `a`: around (inner plus white space).
