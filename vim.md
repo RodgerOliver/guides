@@ -54,6 +54,13 @@ Vim is an cli IDE.
 - `H`: move cursor top window.
 - `M`: move cursor middle window.
 - `L`: move cursor end window.
+- `zz`: puts the cursor in the middle of the screen.
+- `zt`: puts the cursor in the top of the screen.
+- `ctrl + U`: moves the screen up a half.
+- `ctrl + D`: moves the screen down a half.
+- `^`: go to first non blank character of the line.
+- `g_`: go to last non blank character of the line.
+- `*`: highlight all words the same as where the cursor is at.
 - `>`: indent.
 - `<`: outdent.
 - `:ab [abreviation] [word]`: create an abreviation.
