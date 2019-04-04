@@ -13,11 +13,6 @@ Vim is an cli IDE.
 - Pressing just the motion wile in Normal mode will just move the cursor.
 - `.`: repeats the last command.
 - `:echo expand('%:t')`: echo current file name.
-- `: <ctrl + P>`: go up in the command mode.
-- `: <ctrl + N>`: go down in the command mode.
-- `:reg`: shows all registers.
-- `"1p`: paste register 1.
-- `<ctrl + R [register]>`: paste the register in the command mode.
 
 ## Motions
 - `a`: around (inner plus white space).
@@ -91,6 +86,12 @@ Vim is an cli IDE.
 - `v`: go to Visual mode where you can select text with arrows or operators.
 - `ctrl + V`: Visual mode in blocks.
 - :w [filename]`: save the selected text to a file.
+
+## Command Mode
+
+- `<ctrl + P>`: go up in the command mode.
+- `<ctrl + N>`: go down in the command mode.
+- `<ctrl + R [register]>`: paste the register in the command mode.
 
 ## Exit n Save
 - `:q!`: exit and discard changes.
