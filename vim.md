@@ -26,6 +26,8 @@ Vim is an cli IDE.
 - `F`: find backward.
 - `t`: till forward.
 - `T`: till backward.
+- `;`: repeats the motion forward.
+- `,`: repeats the motion backward.
 
 ### Text Objects
 - `w`: word start.
@@ -54,11 +56,14 @@ Vim is an cli IDE.
 - `ctrl + Y`: scroll window up.
 - `ctrl + F`: scroll page down.
 - `ctrl + B`: scroll page up.
+- `ctrl + U`: scroll half page up.
+- `ctrl + D`: scroll half page down.
 - `H`: move cursor top window.
 - `M`: move cursor middle window.
 - `L`: move cursor end window.
 - `zz`: puts the cursor in the middle of the screen.
 - `zt`: puts the cursor in the top of the screen.
+- `zb`: puts the cursor in the bottom of the screen.
 - `ctrl + U`: moves the screen up a half.
 - `ctrl + D`: moves the screen down a half.
 - `^`: go to first non blank character of the line.
@@ -153,6 +158,7 @@ Vim is an cli IDE.
 - `q [register | key] [commands] q`: create macros.
 - `@[register]`: run macros.
 - `m[register]`: mark where the cursor is at on the register.
+- `M[register]`: mark where the cursor is at on the register and be be used in different files.
 - `\`[register]`: go to the register location.
 
 ## Mapping
