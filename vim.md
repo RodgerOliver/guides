@@ -13,8 +13,8 @@ Vim is an cli IDE.
 - Pressing just the motion wile in Normal mode will just move the cursor.
 - `.`: repeats the last command.
 - `:echo expand('%:t')`: echo current file name.
-- `: <ctrl + P>`: move history up.
-- `: <ctrl + N>`: move history down.
+- `: <ctrl + P>`: go up in the command mode.
+- `: <ctrl + N>`: go down in the command mode.
 - `:reg`: shows all registers.
 - `"1p`: paste register 1.
 
