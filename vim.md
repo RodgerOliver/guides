@@ -108,11 +108,14 @@ Vim is an cli IDE.
 - `U`: unmake changes of a whole line.
 - `ctrl+R`: undo undo's.
 - `p`: put previously deleted text after the cursor.
+- `P`: put previously deleted text before the cursor.
 
 ## Copy n Paste
 - `y`: copy line.
 - `p`: paste.
 - `:r [filename]`: retrieve the file below the cursor line.
+- `:reg`: shows all registers.
+- `"1p`: paste register 1.
 
 ## Search
 - `/[phrase]`: search "phrase".
@@ -142,10 +145,14 @@ Vim is an cli IDE.
 - `:vs [file]`: split vertically.
 - `crtl+WW`: move between windows.
 
+## Tab Navigation
+
 ## Macros
-- Sequence of commands to be run combined in a key.
-- `q [key] [commands] q`: create macros.
-- `@[key]`: run macros.
+- Sequence of commands recorded to a register.
+- `q [register | key] [commands] q`: create macros.
+- `@[register]`: run macros.
+- `m[register]`: mark where the cursor is at on the register.
+- `\`[register]`: go to the register location.
 
 ## Mapping
 - Medium article.
