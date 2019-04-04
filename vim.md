@@ -17,6 +17,7 @@ Vim is an cli IDE.
 - `: <ctrl + N>`: go down in the command mode.
 - `:reg`: shows all registers.
 - `"1p`: paste register 1.
+- `<ctrl + R [register]>`: paste the register in the command mode.
 
 ## Motions
 - `a`: around (inner plus white space).
