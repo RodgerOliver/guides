@@ -157,7 +157,7 @@ Vim is an cli IDE.
 - `crtl + W x`: exchange windows.
 - `crtl + W [r|R]`: move window.
 - `crtl + W =`: reset window sizes.
-- `crtl + W _`: maximize width of the window.
+- `crtl + W \_`: maximize width of the window.
 - `crtl + W |`: maximize height of the window.
 - `crtl + W o`: focus on one split, and the others go to the buffer.
 - `:resize 50`: resize windo to 50%.
