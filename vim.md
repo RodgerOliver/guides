@@ -24,7 +24,7 @@ Vim is an cli IDE.
 - `;`: repeats the motion forward.
 - `,`: repeats the motion backward.
 
-### Text Objects
+### Word Motions
 - `w`: word start.
 - `e`: word end.
 - `b`: word start backwards.
