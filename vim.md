@@ -150,9 +150,30 @@ Vim is an cli IDE.
 ## Split Screen
 - `:sp [file]`: split horizontally.
 - `:vs [file]`: split vertically.
-- `crtl+WW`: move between windows.
+- `ctrl + W s`: split horizontally.
+- `ctrl + W v`: split vertically.
+- `crtl + W [h|j|k|l|w]`: move between windows.
+- `crtl + W q`: closes the current window.
+- `crtl + W x`: exchange windows.
+- `crtl + W [r|R]`: move window.
+- `crtl + W =`: reset window sizes.
+- `crtl + W _`: maximize width of the window.
+- `crtl + W |`: maximize height of the window.
+- `crtl + W o`: focus on one split, and the others go to the buffer.
+- `:resize 50`: resize windo to 50%.
+- `:vertical resize 50`: resize windo to 50%.
+- `:only`: focus on one split, and the others go to the buffer.
+- `:buffers`: show buffers.
+- `:ba`: open all buffes in the screen.
 
 ## Tab Navigation
+- `:tabnew [file]`: open a net tab.
+- `:tabnext`: go to the next tab.
+- `:tabprev`: go to the previous tab.
+- `:tabfirst`: go to the first tab.
+- `:tablast`: go to the last tab.
+- `gt`: go the the next tab.
+- `gT`: go the the previous tab.
 
 ## Macros
 - Sequence of commands recorded to a register.
@@ -206,6 +227,7 @@ call plug#end()
 - `:set showcmd`
 - `:setlocal spell! spelllang=pt_br`
 - `:w !diff % -`: see changes.
+- `:set splitbelow splitright`
 
 ## Vim-Airline
 Vim-Airline without **powerline** fonts and symbols is weird. Airline is a pure vim version of powerline.
