@@ -2,46 +2,20 @@
 
 Vim is an cli IDE.
 
-## Normal mode
-- `[number] [operator] [motion]`
-- `[number]`: how many times.
-- `[operator]`: what is going to be done.
-- `[motion]`: what the operator will operate on: `w`, `e`, `$`.
-- `.`: repeats the last command.
-- Pressing just the motion will just move the cursor.
-- `<ESC>`: return to normal mode.
-- `ctrl+G`: show cursor location.
-- `ctrl + E`: scroll window down.
-- `ctrl + Y`: scroll window up.
-- `ctrl + F`: scroll page down.
-- `ctrl + B`: scroll page up.
-- `ctrl + U`: scroll half page up.
-- `ctrl + D`: scroll half page down.
-- `H`: move cursor top window.
-- `M`: move cursor middle window.
-- `L`: move cursor end window.
-- `zz`: puts the cursor in the middle of the screen.
-- `zt`: puts the cursor in the top of the screen.
-- `zb`: puts the cursor in the bottom of the screen.
-- `ctrl + U`: moves the screen up a half.
-- `ctrl + D`: moves the screen down a half.
-- `*`: highlight all words the same as where the cursor is at.
-- `>`: indent.
-- `<`: outdent.
-- `:ab [abreviation] [word]`: create an abreviation.
+## Open n Exit n Save
+- `vim [file]`: open "file" with Vim.
+- `:q!`: exit and discard changes.
+- `:w [filename]`: save file.
+- `:wq`: save and exit.
+- `:e [file]`: open file.
+- `ZZ`: save and exit.
+- `ctrl + Z`: background session.
+- `fg`: restore session.
 
-### Motions
+## Motions
 - Motions move the cursor.
 
-#### Word Motions
-- `w`: word start.
-- `e`: word end.
-- `b`: word start backwards.
-- `s`: sentence.
-- `p`: paragraph.
-- `t`: tag.
-
-#### Cursor Motions
+### Cursor Motions
 - `h`: left arrow.
 - `l`: right arrow.
 - `j`: down arrow.
@@ -56,7 +30,24 @@ Vim is an cli IDE.
 - `^`: go to first non blank character of the line.
 - `g_`: go to last non blank character of the line.
 
-#### Other Motions
+#### Other Ways to Mobe The Cursor
+- `ctrl + G`: show cursor location.
+- `H`: move cursor top window.
+- `M`: move cursor middle window.
+- `L`: move cursor end window.
+- `zz`: puts the cursor in the middle of the screen.
+- `zt`: puts the cursor in the top of the screen.
+- `zb`: puts the cursor in the bottom of the screen.
+
+### Word Motions
+- `w`: word start.
+- `e`: word end.
+- `b`: word start backwards.
+- `s`: sentence.
+- `p`: paragraph.
+- `t`: tag.
+
+### Other Motions
 - `a`: around (inner plus white space).
 - `i`: inner.
 - `f`: find forward.
@@ -65,7 +56,27 @@ Vim is an cli IDE.
 - `T`: till backward.
 - `;`: repeats the motion forward.
 - `,`: repeats the motion backward.
- 
+
+## Scoll Page
+- `ctrl + E`: scroll window down.
+- `ctrl + Y`: scroll window up.
+- `ctrl + F`: scroll page down.
+- `ctrl + B`: scroll page up.
+- `ctrl + U`: scroll half page up.
+- `ctrl + D`: scroll half page down.
+
+## Normal mode
+- `<ESC>`: return to normal mode.
+- `.`: repeats the last command.
+- `[number] [operator] [motion]`
+- `[number]`: how many times.
+- `[operator]`: what is going to be done.
+- `[motion]`: what the operator will operate on: `w`, `e`, `$`.
+- `*`: highlight all words the same as where the cursor is at.
+- `>`: indent.
+- `<`: outdent.
+- `:ab [abreviation] [word]`: create an abreviation.
+
 ## Insert mode
 - `i`: insert text before the cursor.
 - `a`: insert text after the cursor.
@@ -90,16 +101,6 @@ Vim is an cli IDE.
 - `ctrl + P`: go up in the command mode.
 - `ctrl + N`: go down in the command mode.
 - `ctrl + R [register]`: paste the register in the command mode.
-
-## Open n Exit n Save
-- `vim [file]`: open "file" with Vim.
-- `:q!`: exit and discard changes.
-- `:w [filename]`: save file.
-- `:wq`: save and exit.
-- `:e [file]`: open file.
-- `ZZ`: save and exit.
-- `ctrl + Z`: background session.
-- `fg`: restore session.
 
 ## Delete
 - `x`: delete the character under the cursor.
