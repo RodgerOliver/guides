@@ -50,10 +50,10 @@ Motions move the cursor.
 ### Other Motions
 - `a`: around (inner plus white space).
 - `i`: inner.
-- `f`: find forward.
-- `F`: find backward.
-- `t`: till forward.
-- `T`: till backward.
+- `f [char]`: find char forward.
+- `F [char]`: find char backward.
+- `t [char]`: find till char forward.
+- `T [char]`: find till char backward.
 - `;`: repeats the motion forward.
 - `,`: repeats the motion backward.
 
