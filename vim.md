@@ -2,6 +2,10 @@
 
 Vim is a cli IDE.
 
+**Pattern**: `[number] [operator] [number] [motion | text object]`
+
+Numbers are optional.
+
 ## Open n Exit n Save
 - `vim [file]`: open "file" with Vim.
 - `:q!`: exit and discard changes.
@@ -12,10 +16,19 @@ Vim is a cli IDE.
 - `ctrl + Z`: background session.
 - `fg`: restore session.
 
+## Operators
+Make something to the motion.
+
+- `d`: delete.
+- `c`: change.
+- `y`: yank (copy).
+- `>, <`: indent, dedent.
+- `=`: reformat (reindent, break long lines, etc).
+
 ## Motions
 Motions move the cursor.
 
-### Cursor Motions
+## Cursor Motions
 - `h`: left arrow.
 - `l`: right arrow.
 - `j`: down arrow.
@@ -30,7 +43,7 @@ Motions move the cursor.
 - `^`: first non blank character of the line.
 - `g_`: last non blank character of the line.
 
-#### Other Ways to Move The Cursor
+### Other Ways to Move The Cursor
 - `ctrl + G`: show cursor location.
 - `H`: move cursor top window.
 - `M`: move cursor middle window.
@@ -39,19 +52,12 @@ Motions move the cursor.
 - `zt`: puts the cursor in the top of the screen.
 - `zb`: puts the cursor in the bottom of the screen.
 
-### Word Motions
+## Word Motions
 - `w`: word start.
 - `e`: word end.
 - `b`: word start backwards.
 
-### Other Motions and Text Objects
-- Objects
-  - `w`: word.
-  - `s`: sentence.
-  - `p`: paragraph.
-  - `t`: tag.
-- `a[obj]`: around object (inner plus white space).
-- `i[obj]`: inner object.
+## Other Motions
 - `f [char]`: find char forward.
 - `F [char]`: find char backward.
 - `t [char]`: find till char forward.
@@ -59,12 +65,17 @@ Motions move the cursor.
 - `;`: repeats the motion forward.
 - `,`: repeats the motion backward.
 
-## Operators
-- `d`: delete.
-- `c`: change.
-- `y`: yank (copy).
-- `>, <`: indent, dedent.
-- `=`: reformat (reindent, break long lines, etc).
+## Text Objects
+- Objects
+  - `w`: word.
+  - `s`: sentence.
+  - `p`: paragraph.
+  - `t`: tag.
+  - `)`
+  - `'`
+  - `"`
+- `a[obj]`: around object (inner plus white space).
+- `i[obj]`: inner object.
 
 ## Scoll Page
 - `ctrl + E`: scroll window down.
@@ -75,17 +86,11 @@ Motions move the cursor.
 - `ctrl + D`: scroll half page down.
 
 ## Normal Mode
-Move the cursor and change the file.
+Move the cursor and change text.
 
 - `<ESC>`: return to Normal mode.
 - `.`: repeats the last command.
-- `[number] [operator] [motion]`
-- `[number]`: how many times.
-- `[operator]`: what is going to be done.
-- `[motion]`: what the operator will operate on: `w`, `e`, `$`.
 - `*`: highlight all words the same as where the cursor is at.
-- `>`: indent.
-- `<`: outdent.
 - `:ab [abreviation] [word]`: create an abreviation.
 
 ## Insert Mode
