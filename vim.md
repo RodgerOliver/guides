@@ -2,51 +2,15 @@
 
 Vim is an cli IDE.
 
-- Avoid the escape key.
-- `:help`: help.
-- `ctrl + D`: while in command mode, type this to show other like cmds.
-- `vim [file]`: open "file" with Vim.
+## Normal mode
 - `[number] [operator] [motion]`
 - `[number]`: how many times.
 - `[operator]`: what is going to be done.
 - `[motion]`: what the operator will operate on: `w`, `e`, `$`.
-- Pressing just the motion wile in Normal mode will just move the cursor.
 - `.`: repeats the last command.
-- `:echo expand('%:t')`: echo current file name.
-
-## Motions
-- `a`: around (inner plus white space).
-- `i`: inner.
-- `f`: find forward.
-- `F`: find backward.
-- `t`: till forward.
-- `T`: till backward.
-- `;`: repeats the motion forward.
-- `,`: repeats the motion backward.
-
-### Word Motions
-- `w`: word start.
-- `e`: word end.
-- `b`: word start backwards.
-- `s`: sentence.
-- `p`: paragraph.
-- `t`: tag.
-
-## Normal mode
 - Pressing just the motion will just move the cursor.
 - `<ESC>`: return to normal mode.
-- `h`: left arrow.
-- `l`: right arrow.
-- `j`: down arrow.
-- `k`: up arrow.
-- `gk`: move in visual lines up.
-- `gj`: move in visual lines down.
-- `0`: line start.
-- `$`: line end.
 - `ctrl+G`: show cursor location.
-- `gg`: move the cursor to the start of the file.
-- `G`: move the cursor to the end of the file.
-- `50G`: move to the line 50.
 - `ctrl + E`: scroll window down.
 - `ctrl + Y`: scroll window up.
 - `ctrl + F`: scroll page down.
@@ -61,12 +25,46 @@ Vim is an cli IDE.
 - `zb`: puts the cursor in the bottom of the screen.
 - `ctrl + U`: moves the screen up a half.
 - `ctrl + D`: moves the screen down a half.
-- `^`: go to first non blank character of the line.
-- `g_`: go to last non blank character of the line.
 - `*`: highlight all words the same as where the cursor is at.
 - `>`: indent.
 - `<`: outdent.
 - `:ab [abreviation] [word]`: create an abreviation.
+
+### Motions
+- Motions move the cursor.
+
+#### Word Motions
+- `w`: word start.
+- `e`: word end.
+- `b`: word start backwards.
+- `s`: sentence.
+- `p`: paragraph.
+- `t`: tag.
+
+#### Cursor Motions
+- `h`: left arrow.
+- `l`: right arrow.
+- `j`: down arrow.
+- `k`: up arrow.
+- `gk`: move in visual lines up.
+- `gj`: move in visual lines down.
+- `0`: line start.
+- `$`: line end.
+- `gg`: move the cursor to the start of the file.
+- `G`: move the cursor to the end of the file.
+- `50G`: move to the line 50.
+- `^`: go to first non blank character of the line.
+- `g_`: go to last non blank character of the line.
+
+#### Other Motions
+- `a`: around (inner plus white space).
+- `i`: inner.
+- `f`: find forward.
+- `F`: find backward.
+- `t`: till forward.
+- `T`: till backward.
+- `;`: repeats the motion forward.
+- `,`: repeats the motion backward.
  
 ## Insert mode
 - `i`: insert text before the cursor.
@@ -89,19 +87,19 @@ Vim is an cli IDE.
 
 ## Command Mode
 
-- `<ctrl + P>`: go up in the command mode.
-- `<ctrl + N>`: go down in the command mode.
-- `<ctrl + R [register]>`: paste the register in the command mode.
+- `ctrl + P`: go up in the command mode.
+- `ctrl + N`: go down in the command mode.
+- `ctrl + R [register]`: paste the register in the command mode.
 
-## Exit n Save
+## Open n Exit n Save
+- `vim [file]`: open "file" with Vim.
 - `:q!`: exit and discard changes.
-- `:wq`: save and exit.
-- `x`: save and exit.
-- `ZZ`: save and exit.
 - `:w [filename]`: save file.
+- `:wq`: save and exit.
+- `:e [file]`: open file.
+- `ZZ`: save and exit.
 - `ctrl + Z`: background session.
 - `fg`: restore session.
-- `:e [file]`: open file.
 
 ## Delete
 - `x`: delete the character under the cursor.
@@ -235,3 +233,9 @@ Vim-Airline without **powerline** fonts and symbols is weird. Airline is a pure 
 In the README.md file has the instructions to install this font. Then change the ****font of the terminal**.
 
 - `:Airline<TAB>`: change airline settings.
+
+## Help
+
+- `:help`: help.
+- `ctrl + D`: while in command mode, type this to show other like cmds.
+
