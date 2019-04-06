@@ -13,7 +13,7 @@ Vim is a cli IDE.
 - `fg`: restore session.
 
 ## Motions
-- Motions move the cursor.
+Motions move the cursor.
 
 ### Cursor Motions
 - `h`: left arrow.
@@ -24,11 +24,11 @@ Vim is a cli IDE.
 - `gj`: move in visual lines down.
 - `0`: line start.
 - `$`: line end.
-- `gg`: move the cursor to the start of the file.
-- `G`: move the cursor to the end of the file.
+- `gg`: file start.
+- `G`: file end.
 - `50G`: move to the line 50.
-- `^`: go to first non blank character of the line.
-- `g_`: go to last non blank character of the line.
+- `^`: first non blank character of the line.
+- `g_`: last non blank character of the line.
 
 #### Other Ways to Move The Cursor
 - `ctrl + G`: show cursor location.
@@ -65,8 +65,10 @@ Vim is a cli IDE.
 - `ctrl + U`: scroll half page up.
 - `ctrl + D`: scroll half page down.
 
-## Normal mode
-- `<ESC>`: return to normal mode.
+## Normal Mode
+Move the cursor and change the file.
+
+- `<ESC>`: return to Normal mode.
 - `.`: repeats the last command.
 - `[number] [operator] [motion]`
 - `[number]`: how many times.
@@ -77,7 +79,9 @@ Vim is a cli IDE.
 - `<`: outdent.
 - `:ab [abreviation] [word]`: create an abreviation.
 
-## Insert mode
+## Insert Mode
+Insert text.
+
 - `i`: insert text before the cursor.
 - `a`: insert text after the cursor.
 - `A`: append text at the end oh the line.
@@ -90,14 +94,15 @@ Vim is a cli IDE.
 - `ci)`: change inside parens.
 - `c/word`: change every before word.
 
-## Visual mode
+## Visual Mode
+Select text.
+
 - Use the arrows or motions to select text.
-- `v`: go to Visual mode where you can select text with arrows or operators.
+- `v`: go to Visual mode.
 - `ctrl + V`: Visual mode in blocks.
 - :w [filename]`: save the selected text to a file.
 
 ## Command Mode
-
 - `ctrl + P`: go up in the command mode.
 - `ctrl + N`: go down in the command mode.
 - `ctrl + R [register]`: paste the register in the command mode.
@@ -175,7 +180,8 @@ Vim is a cli IDE.
 - `gT`: go the the previous tab.
 
 ## Macros
-- Sequence of commands recorded to a register.
+Sequence of commands recorded to a register.
+
 - `q [register | key] [commands] q`: create macros.
 - `@[register]`: run macros.
 - `m[register]`: mark where the cursor is at on the register.
@@ -239,4 +245,3 @@ In the README.md file has the instructions to install this font. Then change the
 
 - `:help`: help.
 - `ctrl + D`: while in command mode, type this to show other like cmds.
-
