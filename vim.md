@@ -1,6 +1,6 @@
 # Vim
 
-Vim is an cli IDE.
+Vim is a cli IDE.
 
 ## Open n Exit n Save
 - `vim [file]`: open "file" with Vim.
@@ -30,7 +30,7 @@ Vim is an cli IDE.
 - `^`: go to first non blank character of the line.
 - `g_`: go to last non blank character of the line.
 
-#### Other Ways to Mobe The Cursor
+#### Other Ways to Move The Cursor
 - `ctrl + G`: show cursor location.
 - `H`: move cursor top window.
 - `M`: move cursor middle window.
