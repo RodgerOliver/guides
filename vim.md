@@ -203,7 +203,12 @@ Sequence of commands recorded to a register.
 - `\`[register]`: go to the register location.
 
 ## Mapping
-- Medium article.
+- `:map [lhs] [rhs]`: map in "rhs" the "lhs", both are sequece of keys.
+- `:noremap`: non recursive map, the "rhs"can't call the "lhs".
+- `:nmap`: map only on Normal mode.
+- `:imap`: map only on Insert mode.
+- `:vmap`: map only on Visual mode.
+- 'nore', `n`, `i` and `v` are prefixes for `map` and can be combined.
 
 ## Plugins and Scripts
 - Install a plugin manager like Vim-Plug.
