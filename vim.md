@@ -43,19 +43,28 @@ Motions move the cursor.
 - `w`: word start.
 - `e`: word end.
 - `b`: word start backwards.
-- `s`: sentence.
-- `p`: paragraph.
-- `t`: tag.
 
-### Other Motions
-- `a`: around (inner plus white space).
-- `i`: inner.
+### Other Motions and Text Objects
+- Objects
+  - `w`: word.
+  - `s`: sentence.
+  - `p`: paragraph.
+  - `t`: tag.
+- `a[obj]`: around object (inner plus white space).
+- `i[obj]`: inner object.
 - `f [char]`: find char forward.
 - `F [char]`: find char backward.
 - `t [char]`: find till char forward.
 - `T [char]`: find till char backward.
 - `;`: repeats the motion forward.
 - `,`: repeats the motion backward.
+
+## Operators
+- `d`: delete.
+- `c`: change.
+- `y`: yank (copy).
+- `>, <`: indent, dedent.
+- `=`: reformat (reindent, break long lines, etc).
 
 ## Scoll Page
 - `ctrl + E`: scroll window down.
