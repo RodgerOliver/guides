@@ -2,6 +2,8 @@
 
 Vim is a cli IDE.
 
+Change default text editor to Vim: `sudo update-alternatives --config editor`
+
 **Pattern**: `[number] [operator] [number] [motion | text object]`
 
 Numbers are optional.
