@@ -18,6 +18,7 @@ Numbers are optional.
 
 ## Operators
 Make something to the motion.
+If they are followed by themselves the operation will affect the line.
 
 - `d`: delete.
 - `c`: change.
@@ -53,6 +54,10 @@ Motions move the cursor.
 - `zb`: puts the cursor in the bottom of the screen.
 
 ## Word Motions
+Lower case: affect ponctuation too.
+
+Capital case: affect only words.
+
 - `w`: word start.
 - `e`: word end.
 - `b`: word start backwards.
@@ -99,12 +104,13 @@ Insert text.
 
 - `i`: insert text before the cursor.
 - `a`: insert text after the cursor.
-- `A`: append text at the end oh the line.
 - `o`: create a line under the cursor and go to Insert mode.
-- `O`: create a line above the cursor and go to Insert mode.
 - `s`: delete the character under the cursor and go to Insert mode.
-- `S`: delete line and go to Insert mode.
 - `c`: change something. Deletes and go to Insert mode.
+- `I`: insert text at the start of the line.
+- `A`: append text at the end of the line.
+- `O`: create a line above the cursor and go to Insert mode.
+- `S`: delete line and go to Insert mode.
 - `C`: delete everything after the cursor and go to Insert mode.
 - `ci)`: change inside parens.
 - `c/word`: change every before word.
@@ -114,7 +120,7 @@ Select text.
 
 - Use the arrows or motions to select text.
 - `v`: go to Visual mode.
-- `shift + V`: Visual mode in lines.
+- `V`: go to Visual mode in lines.
 - `ctrl + V`: Visual mode in blocks.
 - :w [filename]`: save the selected text to a file.
 
