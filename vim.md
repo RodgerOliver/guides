@@ -181,8 +181,6 @@ Select text.
 - `:resize 50`: resize windo to 50%.
 - `:vertical resize 50`: resize windo to 50%.
 - `:only`: focus on one split, and the others go to the buffer.
-- `:buffers`: show buffers.
-- `:ba`: open all buffes in the screen.
 
 ## Tab Navigation
 - `:tabnew [file]`: open a net tab.
@@ -192,6 +190,17 @@ Select text.
 - `:tablast`: go to the last tab.
 - `gt`: go the the next tab.
 - `gT`: go the the previous tab.
+
+## Buffers
+- `:buffers`: show buffers.
+- `:ls`: show buffers.
+- `:ba`: open all buffers in the screen.
+- `:b[num]`: open specific buffer.
+- `:b [file]`: open an already opened file that is in the buffer.
+
+## Find File
+- `:set path+=**`
+- `:find [file]`: find file from the root path.
 
 ## Macros
 Sequence of commands recorded to a register.
