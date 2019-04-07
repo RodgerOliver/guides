@@ -76,6 +76,7 @@ Motions move the cursor.
   - `"`
 - `a[obj]`: around object (inner plus white space).
 - `i[obj]`: inner object.
+- `gn`: operate on the last search.
 
 ## Scoll Page
 - `ctrl + E`: scroll window down.
@@ -113,6 +114,7 @@ Select text.
 
 - Use the arrows or motions to select text.
 - `v`: go to Visual mode.
+- `shift + V`: Visual mode in lines.
 - `ctrl + V`: Visual mode in blocks.
 - :w [filename]`: save the selected text to a file.
 
@@ -201,6 +203,12 @@ Select text.
 ## Find File
 - `:set path+=**`
 - `:find [file]`: find file from the root path.
+
+## Multiple Cursors Feature
+- `/var`: search a word.
+- `cgn`: change the word.
+- `.`: repeat for the other words.
+- `n`: skip a word.
 
 ## Macros
 Sequence of commands recorded to a register.
