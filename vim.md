@@ -130,6 +130,17 @@ Select text.
 - `ctrl + P`: go up in the command mode.
 - `ctrl + N`: go down in the command mode.
 - `ctrl + R [register]`: paste the register in the command mode.
+- `ctrl + R [ctrl + W]`: paste the word unser the cursor in the command mode.
+
+## Registers
+- Almost all registers start with `"`.
+- Macros start with `@`.
+- The default register to read and write is `""`, the "unmaned" register.
+- Yanked text goes into register `"0`.
+- Deleted text goes into register `"1`.
+- `".`: last inserted text.
+- `":`: most recent command.
+- `"+`: system clipboard register.
 
 ## Delete
 - `x`: delete the character under the cursor.
