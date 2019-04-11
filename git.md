@@ -37,11 +37,21 @@ If you want to stage a deleted file use `git rm [file]`, this will delete from t
 
 If you want to work on a file an commit before the work is done remove the wanted files from the stage area.
 
+## See Changes In The Files
+
+`git diff .`
+
+Get all changes in the files compared to the last commit.
+
 ## Commit
 
 `git commit -m "[message]"`
 
 When a commit is make a history is created with the changes that you have made to the files.
+
+`git commit --amend`
+
+To override the last commit with the current changes made.
 
 ## Commit history
 
@@ -109,7 +119,11 @@ This makes to lines in the history, one for the master branch and one for the ot
 
 `git remote -v`
 
+To get all the remote paths that your local repo can be pushed.
+
 `git clone`
+
+To clone from GitHub to your local machine.
 
 ## Push and pull commits
 
@@ -123,4 +137,34 @@ To update the GitHub repo with your version from the local machine.
 
 `git pull origin master`
 
-To update your local machine with the GitHub repo version
+To update your local machine with the GitHub repo version.
+
+`git fetch`
+
+To search for commits that are not pulled in the local repo.
+
+## Additional
+
+### Remove Large Files All History
+
+The size of the git repo is the **content** (visible files) and the **history** (hidden files like `.git`).
+
+If a large file is added and removed, the history keeps it and the repo stays big after deleting it, because it's still in the history.
+
+`git reset --hard HEAD~1` doesn't delete the history, just deletes the timeline.
+
+To list the big files that are in the history execute:
+
+```
+$ git gc --prune=now
+$ ./git_find_big.sh
+```
+
+**If the file is in the directory it will be removed, so make backup or add it to the `.gitignore` file.**
+
+```
+$ git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch <file/path>' --prune-empty --tag-name-filter cat -- --all
+$ git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin
+$ git reflog expire --expire=now --all
+$ git gc --prune=now
+```
