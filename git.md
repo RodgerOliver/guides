@@ -79,6 +79,10 @@ If you get a conflict error, edit the needed files, add and commit the changes.
 
 This command will delete all the previous commits but keep the changes. If you want to combine all commits together just make a new commit. If you want to completely remove them perform `git reset [commit id] --hard`.
 
+`git rebase -i`
+
+This command can be used to change lines in files, edit commit messages and more.
+
 ## Create branches
 
 `git branch [branch name]`
