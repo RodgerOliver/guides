@@ -168,3 +168,17 @@ $ git for-each-ref --format='delete %(refname)' refs/original | git update-ref -
 $ git reflog expire --expire=now --all
 $ git gc --prune=now
 ```
+
+### Update Repo After Adding .gitignore
+
+`git rm -r --cached .`
+
+Untrack all files.
+
+`git add .`
+
+Add all files based on .gitignore.
+
+`git commit -m ".gitignore fix"`
+
+Commit the changes.
