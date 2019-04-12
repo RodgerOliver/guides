@@ -182,6 +182,7 @@ Select text.
 - `:x,ys/old/new/g`: change words between "x" and "y" range, "x" and "y" been numbers.
 - `:%s/old/new/g`: change words in the whole file.
 - `:%s/new/old/gc`: change words in the whole file, but prompt to change or not.
+- `:v/[word]/d`: remove everything that is not "word".
 
 ## Shell Cmds
 - `:!`: execute an external command. `!` means execute in shell.
