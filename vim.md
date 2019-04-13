@@ -64,6 +64,13 @@ Capital case: affect only words.
 - `e`: word end.
 - `b`: word start backwards.
 
+## Sentences and Paragraphs Motions
+
+- `)`: sentece forward.
+- `(`: sentece backward.
+- `}`: paragraph forward.
+- `{`: paragraph backward.
+
 ## Other Motions
 - `f [char]`: find char forward.
 - `F [char]`: find char backward.
