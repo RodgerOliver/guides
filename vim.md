@@ -106,6 +106,10 @@ Move the cursor and change text.
 - `<ESC>`: return to Normal mode.
 - `.`: repeats the last command.
 - `*`: highlight all words the same as where the cursor is at.
+- `J`: join lines.
+- `Ctrl + A`: increment.
+- `Ctrl + I`: decrement.
+- `:retab`: correct undentation.
 - `:ab [abreviation] [word]`: create an abreviation.
 
 ## Insert Mode
