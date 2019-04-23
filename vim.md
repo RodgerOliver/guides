@@ -304,9 +304,20 @@ call plug#end()
 ## Vim-Airline
 Vim-Airline without **powerline** fonts and symbols is weird. Airline is a pure vim version of powerline.
 
-In the README.md file has the instructions to install this font. Then change the ****font of the terminal**.
+In the README.md file has the instructions to install this font. Then change the **font of the terminal**.
 
 - `:Airline<TAB>`: change airline settings.
+
+## Vim Wiki
+Create notes in Vim.
+
+- `<leader>ww`: go to the index page.
+- `<backspace>`: go to the previous page.
+
+## Commentary.vim
+Comment things on Vim.
+
+- `gcc`: toggle comment.
 
 ## Help
 
