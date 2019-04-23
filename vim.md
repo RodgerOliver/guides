@@ -231,16 +231,6 @@ Select text.
 - `:b[num]`: open specific buffer.
 - `:b [file]`: open an already opened file that is in the buffer.
 
-## Find File
-- `:set path+=**`
-- `:find [file]`: find file from the root path.
-
-## Multiple Cursors Feature
-- `/var`: search a word.
-- `cgn`: change the word.
-- `.`: repeat for the other words.
-- `n`: skip a word.
-
 ## Macros
 Sequence of commands recorded to a register.
 
@@ -258,34 +248,6 @@ Sequence of commands recorded to a register.
 - `:vmap`: map only on Visual mode.
 - 'nore', `n`, `i` and `v` are prefixes for `map` and can be combined.
 
-## Plugins and Scripts
-- Install a plugin manager like Vim-Plug.
-- vimawesome.com for plugins.
-- `:Plug<tab>`: see plug options.
-
-```
-call plug#begin()
-
-Plug 'flazz/vim-colorschemes'
-Plug 'jiangmiao/auto-pairs'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-
-call plug#end()
-```
-## Completion
-- `ctrl + P`: looks backwards in the files opened to get completions.
-- `ctrl + N`: looks forwards in the files opened to get completions.
-- `ctrl + X`: go to completion mode to complete in different ways.
-- `ctrl + XF`: completes file names.
-
-## Snippets
-- Read a file into the current buffer, the file can be a template of the language.
-- `nnoremap ,html :-1read ~/.vim/templates/skeleton.html<CR>`
-
 ## Options
 - Start a .vimrc file to keep the preferences (add `<CR>` to represent ENTER).
 - `:set ic`: ignore case on search.
@@ -301,25 +263,62 @@ call plug#end()
 - `:w !diff % -`: see changes.
 - `:set splitbelow splitright`
 
-## Vim-Airline
+## Help
+
+- `:help`: help.
+- `ctrl + D`: while in command mode, type this to show other like cmds.
+
+## Plugins
+
+### Plugins and Scripts
+- Install a plugin manager like Vim-Plug.
+- vimawesome.com for plugins.
+- `:Plug<tab>`: see plug options.
+
+```
+call plug#begin()
+
+Plug 'flazz/vim-colorschemes'
+
+call plug#end()
+```
+
+### Vim-Airline
 Vim-Airline without **powerline** fonts and symbols is weird. Airline is a pure vim version of powerline.
 
 In the README.md file has the instructions to install this font. Then change the **font of the terminal**.
 
 - `:Airline<TAB>`: change airline settings.
 
-## Vim Wiki
+### Vim Wiki
 Create notes in Vim.
 
 - `<leader>ww`: go to the index page.
 - `<backspace>`: go to the previous page.
 
-## Commentary.vim
+### Commentary.vim
 Comment things on Vim.
 
 - `gcc`: toggle comment.
 
-## Help
+## Plugin's Features
 
-- `:help`: help.
-- `ctrl + D`: while in command mode, type this to show other like cmds.
+### Completion
+- `ctrl + P`: looks backwards in the files opened to get completions.
+- `ctrl + N`: looks forwards in the files opened to get completions.
+- `ctrl + X`: go to completion mode to complete in different ways.
+- `ctrl + XF`: completes file names.
+
+### Snippets
+- Read a file into the current buffer, the file can be a template of the language.
+- `nnoremap ,html :-1read ~/.vim/templates/skeleton.html<CR>`
+
+### Multiple Cursors Feature
+- `/var`: search a word.
+- `cgn`: change the word.
+- `.`: repeat for the other words.
+- `n`: skip a word.
+
+### Find File
+- `:set path+=**`
+- `:find [file]`: find file from the root path.
