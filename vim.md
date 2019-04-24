@@ -320,6 +320,14 @@ Comment things on Vim.
 - `.`: repeat for the other words.
 - `n`: skip a word.
 
+### Move Lines Vertically
+Mappings for moving.
+
+- `nnoremap K :m.-2<CR>==`
+- `nnoremap J :m.+1<CR>==`
+- `vnoremap K :m'<-2<CR>gv=gv`
+- `vnoremap J :m'>+1<CR>gv=gv`
+
 ### Folding
 - `zf[motion]`: create a fold
 - `za`: toggle.
