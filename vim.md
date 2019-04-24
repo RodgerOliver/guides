@@ -107,6 +107,7 @@ Move the cursor and change text.
 - `.`: repeats the last command.
 - `*`: highlight all words the same as where the cursor is at.
 - `J`: join lines.
+- `50%`: go to 50% of the file.
 - `Ctrl + A`: increment.
 - `Ctrl + I`: decrement.
 - `:retab`: correct undentation.
@@ -318,6 +319,13 @@ Comment things on Vim.
 - `cgn`: change the word.
 - `.`: repeat for the other words.
 - `n`: skip a word.
+
+### Folding
+- `zf[motion]`: create a fold
+- `za`: toggle.
+- `zo | zc`: open and close.
+- `zR | zM`: open and close all.
+- `zk | zj`: go to next and previous fold.
 
 ### Find File
 - `:set path+=**`
