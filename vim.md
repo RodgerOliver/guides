@@ -294,8 +294,22 @@ In the README.md file has the instructions to install this font. Then change the
 ### Vim Wiki
 Create notes in Vim.
 
-- `<leader>ww`: go to the index page.
+- `[number]<leader>ww`: open index page.
+- `[number]<leader>wt`: open index page in a new tab.
+- Number is relative wiki order as defined in `.vimrc`, deafult 1.
+- `<leader>ws`: list and select wikis.
+- `<leader>wd`: delete wiki page.
+- `<leader>wr`: rename wiki page.
+- `<CR>`: follow/create link.
+- `<Tab>`: go to the next link on current page.
+- `<S-Tab>`: go to the previous link on current page.
 - `<backspace>`: go to the previous page.
+- `<C-space>`: toggle todo on/off.
+- `gln`: increase todo.
+- `glp`: decrease todo.
+- `=`: add header level.
+- `-`: remove header level.
+- `+`: create links.
 
 ### Commentary.vim
 Comment things on Vim.
