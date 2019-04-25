@@ -316,6 +316,13 @@ Comment things on Vim.
 
 - `gcc`: toggle comment.
 
+### Vim Instant Markdown
+Live preview of markdown.
+
+- `sudo npm -g install instant-markdown-d`
+- `let g:instant_markdown_autostart = 0`
+- `nnoremap <leader>p :InstantMarkdownPreview<CR>`
+
 ## Plugin's Features
 
 ### Completion
