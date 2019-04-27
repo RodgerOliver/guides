@@ -330,6 +330,16 @@ Live preview of markdown.
 - `ctrl + N`: looks forwards in the files opened to get completions.
 - `ctrl + X`: go to completion mode to complete in different ways.
 - `ctrl + XF`: completes file names.
+- `ctrl + XO`: omni complete.
+
+#### Omni Completion
+Omni completion is a smart autocomplete method.
+
+- `filetype plugin on`: configuration.
+- `set omnifunc=syntaxcomplete#Complete`: configuration.
+- Use with Ctags (creates a tags file with more things to complete).
+- `sudo ctags -R -f ~/.vim/systags /usr/include /usr/local/include`: create tags file.
+- `set tags+=~/.vim/systags`: configuration.
 
 ### Snippets
 - Read a file into the current buffer, the file can be a template of the language.
