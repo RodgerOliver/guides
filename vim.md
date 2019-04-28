@@ -4,6 +4,8 @@ Vim is a cli IDE.
 
 Change default text editor to Vim: `sudo update-alternatives --config editor`
 
+Map <CapsLock> to <ESC>: `xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'`
+
 **Pattern**: `[number] [operator] [number] [motion | text object]`
 
 Numbers are optional.
