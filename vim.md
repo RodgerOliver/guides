@@ -112,8 +112,6 @@ Move the cursor and change text.
 - `50%`: go to 50% of the file.
 - `Ctrl + A`: increment.
 - `Ctrl + I`: decrement.
-- `:retab`: correct undentation.
-- `:ab [abreviation] [word]`: create an abreviation.
 
 ## Insert Mode
 Insert text.
@@ -130,6 +128,7 @@ Insert text.
 - `C`: delete everything after the cursor and go to Insert mode.
 - `ci)`: change inside parens.
 - `c/word`: change every before word.
+- `ctrl + R [register]`: paste the register in the command mode.
 
 ## Visual Mode
 Select text.
@@ -143,8 +142,9 @@ Select text.
 ## Command Mode
 - `ctrl + P`: go up in the command mode.
 - `ctrl + N`: go down in the command mode.
-- `ctrl + R [register]`: paste the register in the command mode.
 - `ctrl + R [ctrl + W]`: paste the word unser the cursor in the command mode.
+- `:retab`: correct undentation.
+- `:ab [abreviation] [word]`: create an abreviation.
 
 ## Registers
 - Almost all registers start with `"`.
@@ -270,6 +270,8 @@ Sequence of commands recorded to a register.
 
 - `:help`: help.
 - `ctrl + D`: while in command mode, type this to show other like cmds.
+
+## [Vim Scripts](https://github.com/christoomey/your-first-vim-plugin)
 
 ## Plugins
 
