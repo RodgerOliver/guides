@@ -87,7 +87,7 @@ Capital case: affect only words.
   - `s`: sentence.
   - `p`: paragraph.
   - `t`: tag.
-  - `)`
+  - `b`: block.
   - `'`
   - `"`
 - `a[obj]`: around object (inner plus white space).
