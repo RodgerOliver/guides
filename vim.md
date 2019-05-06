@@ -112,6 +112,8 @@ Move the cursor and change text.
 - `50%`: go to 50% of the file.
 - `Ctrl + A`: increment.
 - `Ctrl + I`: decrement.
+- `gd`: goto local definition.
+- `gf`: goto file.
 
 ## Insert Mode
 Insert text.
