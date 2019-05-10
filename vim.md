@@ -253,6 +253,14 @@ Sequence of commands recorded to a register.
 - `:vmap`: map only on Visual mode.
 - 'nore', `n`, `i` and `v` are prefixes for `map` and can be combined.
 
+## Diff Files
+- Split them vertically.
+- Pair the scroll on both.
+  - `:set scrollbind`
+  - `:set noscrollbind`
+- Diff both files.
+  - `:diffthis`
+
 ## Options
 - Start a .vimrc file to keep the preferences (add `<CR>` to represent ENTER).
 - `:set ic`: ignore case on search.
