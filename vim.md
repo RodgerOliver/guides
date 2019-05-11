@@ -260,6 +260,7 @@ Sequence of commands recorded to a register.
   - `:set noscrollbind`
 - Diff both files.
   - `:diffthis`
+- `:windo difft`: do the same as above.
 
 ## Options
 - Start a .vimrc file to keep the preferences (add `<CR>` to represent ENTER).
