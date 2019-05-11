@@ -114,6 +114,8 @@ Move the cursor and change text.
 - `Ctrl + I`: decrement.
 - `gd`: goto local definition.
 - `gf`: goto file.
+- `gu`: make lowercase.
+- `gU`: make uppercase.
 
 ## Insert Mode
 Insert text.
