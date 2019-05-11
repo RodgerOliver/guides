@@ -205,7 +205,7 @@ Select text.
 ## Shell Cmds
 - `:!`: execute an external command. `!` means execute in shell.
 
-## Split Screen
+## Windows
 - `:sp [file]`: split horizontally.
 - `:vs [file]`: split vertically.
 - `ctrl + W s`: split horizontally.
@@ -222,7 +222,7 @@ Select text.
 - `:vertical resize 50`: resize windo to 50%.
 - `:only`: focus on one split, and the others go to the buffer.
 
-## Tab Navigation
+## Tabs
 - `:tabnew [file]`: open a net tab.
 - `:tabnext`: go to the next tab.
 - `:tabprev`: go to the previous tab.
@@ -237,6 +237,10 @@ Select text.
 - `:ba`: open all buffers in the screen.
 - `:b[num]`: open specific buffer.
 - `:b [file]`: open an already opened file that is in the buffer.
+
+## Arguments
+- `arga [file]`: add file to argument list.
+- `args`: list all arguments.
 
 ## Macros
 Sequence of commands recorded to a register.
