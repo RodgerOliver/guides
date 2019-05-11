@@ -374,11 +374,23 @@ Mappings for moving.
 - `vnoremap J :m'>+1<CR>gv=gv`
 
 ### Folding
-- `zf[motion]`: create a fold
-- `za`: toggle.
+- `:set foldmethod=[method]`: manual, syntax, indent.
+- `zf[motion]`: create a fold, only on manual method.
+- `za`: toggle fold.
+- `zd`: delete fold.
 - `zo | zc`: open and close.
 - `zR | zM`: open and close all.
 - `zk | zj`: go to next and previous fold.
+- `:set nofoldenable`: open file with folds closed.
+- Save folds in manual method.
+
+```
+augroup AutoSaveManualFolds
+	autocmd!
+	autocmd BufWinLeave /* mkview
+	autocmd BufWinEnter /* silent loadview
+augroup END
+```
 
 ### Find File
 - `:set path+=**`
