@@ -264,6 +264,10 @@ Arguments are like buffers lists only the original files opened hen vim started.
 - `:n`: got to next arg.
 - `##`: represents all files in the arg list. Can be used like %.
 
+## Tags
+- `ctags -R`: generate tags file.
+- `Ctrl + ]`: jump to keyword definition.
+
 ## Macros
 Sequence of commands recorded to a register.
 
