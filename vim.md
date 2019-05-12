@@ -205,24 +205,9 @@ Select text.
 ## Shell Cmds
 - `:!`: execute an external command. `!` means execute in shell.
 
-## Windows
-- `:sp [file]`: split horizontally.
-- `:vs [file]`: split vertically.
-- `ctrl + W s`: split horizontally.
-- `ctrl + W v`: split vertically.
-- `crtl + W [h|j|k|l|w]`: move between windows.
-- `crtl + W q`: closes the current window.
-- `crtl + W x`: exchange windows.
-- `crtl + W [r|R]`: move window.
-- `crtl + W =`: reset window sizes.
-- `crtl + W _`: maximize width of the window.
-- `crtl + W |`: maximize height of the window.
-- `crtl + W o`: focus on one split, and the others go to the buffer.
-- `:resize 50`: resize windo to 50%.
-- `:vertical resize 50`: resize windo to 50%.
-- `:only`: focus on one split, and the others go to the buffer.
-
 ## Tabs
+Tabs are window containers.
+
 - `:tabnew [file]`: open a net tab.
 - `:tabnext`: go to the next tab.
 - `:tabprev`: go to the previous tab.
@@ -231,16 +216,46 @@ Select text.
 - `gt`: go the the next tab.
 - `gT`: go the the previous tab.
 
+## Windows
+Windows are buffer viewports.
+
+- `:sp [file]`: split horizontally.
+- `:vs [file]`: split vertically.
+- `ctrl + W s`: split horizontally.
+- `ctrl + W v`: split vertically.
+- `crtl + W [h|j|k|l|w]`: move between windows.
+- `crtl + W q`: closes the current window.
+- `crtl + W x`: exchange windows.
+- `crtl + W [r|R]`: rotate window.
+- `crtl + W =`: reset window sizes.
+- `crtl + W _`: maximize width of the window.
+- `crtl + W |`: maximize height of the window.
+- `crtl + W o`: focus on one split, and the others go to the buffer.
+- `:resize 50`: resize windo to 50%.
+- `:vertical resize 50`: resize windo to 50%.
+- `:only`: focus on one split, and the others go to the buffer.
+- `:sf`: split window and :find file.
+- `:vert [cmd]`: make any split cmd be vertical.
+- `:windo [cmd]`: execute cmd to all windows.
+
 ## Buffers
+Buffers are file proxies. All files that were opened go to the buffer list.
+
 - `:buffers`: show buffers.
 - `:ls`: show buffers.
 - `:ba`: open all buffers in the screen.
+- `bn`: next buffer.
+- `bd`: delete buffer.
 - `:b[num]`: open specific buffer.
 - `:b [file]`: open an already opened file that is in the buffer.
+- `:bufdo [cmd]`: do cmd to all buffers.
 
 ## Arguments
-- `arga [file]`: add file to argument list.
-- `args`: list all arguments.
+Arguments are like buffers lists only the original files opened hen vim started. More files can be added to this list.
+
+- `:arga [file]`: add file to argument list.
+- `:args`: list all arguments.
+- `:n`: got to next arg.
 
 ## Macros
 Sequence of commands recorded to a register.
