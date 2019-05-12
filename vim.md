@@ -149,6 +149,10 @@ Select text.
 - `ctrl + R [ctrl + W]`: paste the word unser the cursor in the command mode.
 - `:retab`: correct undentation.
 - `:ab [abreviation] [word]`: create an abreviation.
+- `:vim /function/ %`: grep 'function' in the current file.
+- `:cn` go to the next ocasion of the command above.
+- `:cp` go to the previous ocasion of the command above.
+- `:cd [cmd]`: execute cmd to all greped ocasions.
 
 ## Registers
 - Almost all registers start with `"`.
@@ -235,6 +239,7 @@ Windows are buffer viewports.
 - `:vertical resize 50`: resize windo to 50%.
 - `:only`: focus on one split, and the others go to the buffer.
 - `:sf`: split window and :find file.
+- `sall`: split all files in the arg list.
 - `:vert [cmd]`: make any split cmd be vertical.
 - `:windo [cmd]`: execute cmd to all windows.
 
@@ -255,7 +260,9 @@ Arguments are like buffers lists only the original files opened hen vim started.
 
 - `:arga [file]`: add file to argument list.
 - `:args`: list all arguments.
+- `:args **/*.js`: add all JS files to the arg list.
 - `:n`: got to next arg.
+- `##`: represents all files in the arg list. Can be used like %.
 
 ## Macros
 Sequence of commands recorded to a register.
