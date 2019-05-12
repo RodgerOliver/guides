@@ -268,6 +268,12 @@ Arguments are like buffers lists only the original files opened hen vim started.
 - `ctags -R`: generate tags file.
 - `Ctrl + ]`: jump to keyword definition.
 - `Ctrl + T`: jump back to last location.
+- `:tags`: show tags traversed.
+- `:ts`: show list of tags.
+- `:tn`: go to next tag.
+- `:tp`: go to previous tag.
+- `:tf`: go to first tag.
+- `:tl`: go to last tag.
 
 ## Macros
 Sequence of commands recorded to a register.
