@@ -116,6 +116,7 @@ Move the cursor and change text.
 - `gf`: goto file.
 - `gu`: make lowercase.
 - `gU`: make uppercase.
+- `Ctrl + V [cmd or char]`: put the actual command or character you typed.
 
 ## Insert Mode
 Insert text.
