@@ -147,6 +147,7 @@ Select text.
 - `ctrl + P`: go up in the command mode.
 - `ctrl + N`: go down in the command mode.
 - `ctrl + R [ctrl + W]`: paste the word unser the cursor in the command mode.
+- `Ctrl + F`: show command history.
 - `:retab`: correct undentation.
 - `:ab [abreviation] [word]`: create an abreviation.
 - `:vim /function/ %`: grep 'function' in the current file.
