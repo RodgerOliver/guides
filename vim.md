@@ -159,6 +159,7 @@ Select text.
 - `:cn` go to the next ocasion of the command above.
 - `:cp` go to the previous ocasion of the command above.
 - `:cd [cmd]`: execute cmd to all greped ocasions.
+- `:so $VIMRUNTIME/syntax/hitest.vim`: show all highlight groups active.
 
 ## Registers
 - Almost all registers start with `"`.
