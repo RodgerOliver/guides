@@ -110,33 +110,36 @@ Capital case: affect only words.
 Move the cursor and change text.
 
 - `<ESC>`: return to Normal mode.
-- `.`: repeats the last command.
+- `.`: repeats the last action.
 - `*`: highlight all words the same as where the cursor is at.
+- `%`: with the cursor on a parenthesis or brackets type this and find the matching symbol.
 - `J`: join lines.
 - `50%`: go to 50% of the file.
 - `Ctrl + A`: increment.
 - `Ctrl + I`: decrement.
-- `gd`: goto local definition.
-- `gf`: goto file.
-- `gu`: make lowercase.
-- `gU`: make uppercase.
+- `gd`: goto local definition of the word under the cursor.
+- `gf`: goto file under the cursor.
+- `gu[motion]`: make lowercase.
+- `gU[motion]`: make uppercase.
+- `~`: change case.
+- `g~[motion]`: change case of a motion.
 - `Ctrl + V [cmd or char]`: put the actual command or character you typed.
 
 ## Insert Mode
 Insert text.
 
 - `i`: insert text before the cursor.
-- `a`: insert text after the cursor.
-- `o`: create a line under the cursor and go to Insert mode.
-- `s`: delete the character under the cursor and go to Insert mode.
-- `c`: change something. Deletes and go to Insert mode.
 - `I`: insert text at the start of the line.
+- `a`: insert text after the cursor.
 - `A`: append text at the end of the line.
+- `o`: create a line under the cursor and go to Insert mode.
 - `O`: create a line above the cursor and go to Insert mode.
+- `s`: delete the character under the cursor and go to Insert mode.
 - `S`: delete line and go to Insert mode.
+- `c`: change something. Deletes and go to Insert mode.
 - `C`: delete everything after the cursor and go to Insert mode.
 - `ci)`: change inside parens.
-- `c/word`: change every before word.
+- `c/word`: change everything before word.
 - `ctrl + R [register]`: paste the register in the command mode.
 
 ## Visual Mode
@@ -146,14 +149,14 @@ Select text.
 - `v`: go to Visual mode.
 - `V`: go to Visual mode in lines.
 - `ctrl + V`: Visual mode in blocks.
-- :w [filename]`: save the selected text to a file.
+- `:w [filename]`: save the selected text to a file.
 
 ## Command Mode
 - `ctrl + P`: go up in the command mode.
 - `ctrl + N`: go down in the command mode.
 - `ctrl + R [ctrl + W]`: paste the word unser the cursor in the command mode.
 - `Ctrl + F`: show command history.
-- `:retab`: correct undentation.
+- `:retab`: correct indentation.
 - `:ab [abreviation] [word]`: create an abreviation.
 - `:vim /function/ %`: grep 'function' in the current file.
 - `:cn` go to the next ocasion of the command above.
@@ -195,10 +198,10 @@ Select text.
 ## Search
 - `/[phrase]`: search "phrase".
 - `?[phrase]`: search in the opposite direction.
-- `n`: go to the next phrase searched.
-- `N`: go to the previous phrase searched.
-- `ctrl+O`: go back to where you where.
-- `ctrl+I`: go forward.
+- `n`: jump to the next phrase searched.
+- `N`: jump to the previous phrase searched.
+- `ctrl+O`: jump backward.
+- `ctrl+I`: jump forward.
 - `/ignore\c`: ignore case one search.
 
 ## Replace
@@ -206,12 +209,12 @@ Select text.
 - `R`: Insert mode and substitute letters.
 
 ## Substitute
-- `%`: with the cursor on a parenthesis or brackets type this and find the matching symbol.
 - `:s/old/new/g`: to substitute 'new' for 'old'. The flag "g" means change all the words in the line.
 - `:x,ys/old/new/g`: change words between "x" and "y" range, "x" and "y" been numbers.
 - `:%s/old/new/g`: change words in the whole file.
 - `:%s/new/old/gc`: change words in the whole file, but prompt to change or not.
-- `:v/[word]/d`: remove everything that is not "word".
+- `%s/word//n`: count occurrences of "word".
+- `:v/word/d`: remove every line that doesn't contain "word".
 
 ## Shell Cmds
 - `:!`: execute an external command. `!` means execute in shell.
@@ -246,7 +249,7 @@ Windows are buffer viewports.
 - `:vertical resize 50`: resize windo to 50%.
 - `:only`: focus on one split, and the others go to the buffer.
 - `:sf`: split window and :find file.
-- `sall`: split all files in the arg list.
+- `:sall`: split all files in the arg list.
 - `:vert [cmd]`: make any split cmd be vertical.
 - `:windo [cmd]`: execute cmd to all windows.
 
@@ -269,10 +272,10 @@ Arguments are like buffers lists only the original files opened hen vim started.
 - `:args`: list all arguments.
 - `:args **/*.js`: add all JS files to the arg list.
 - `:n`: got to next arg.
-- `##`: represents all files in the arg list. Can be used like %.
+- `##`: represents all files in the arg list. Can be used like `%.`
 
 ## Tags
-- `ctags -R`: generate tags file.
+- `:!ctags -R`: generate tags file.
 - `Ctrl + ]`: jump to keyword definition.
 - `g]`: list all tags of the keyword.
 - `Ctrl + T`: jump back to last location.
@@ -290,7 +293,7 @@ Sequence of commands recorded to a register.
 - `@[register]`: run macros.
 - `m[register]`: mark where the cursor is at on the register.
 - `M[register]`: mark where the cursor is at on the register and be be used in different files.
-- `\`[register]`: go to the register location.
+- `\[register]`: go to the register location.
 
 ## Mapping
 - `:map [lhs] [rhs]`: map in "rhs" the "lhs", both are sequece of keys.
@@ -328,6 +331,7 @@ Sequence of commands recorded to a register.
 
 - `:help`: help.
 - `ctrl + D`: while in command mode, type this to show other like cmds.
+- `K`: go to the man page of the selected text.
 
 ## [Vim Scripts](https://github.com/christoomey/your-first-vim-plugin)
 
