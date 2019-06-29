@@ -158,10 +158,6 @@ Select text.
 - `Ctrl + F`: show command history.
 - `:retab`: correct indentation.
 - `:ab [abreviation] [word]`: create an abreviation.
-- `:vim /function/ %`: grep 'function' in the current file.
-- `:cn` go to the next ocasion of the command above.
-- `:cp` go to the previous ocasion of the command above.
-- `:cd [cmd]`: execute cmd to all greped ocasions.
 - `:so $VIMRUNTIME/syntax/hitest.vim`: show all highlight groups active.
 
 ## Registers
@@ -195,7 +191,7 @@ Select text.
 - `:reg`: shows all registers.
 - `"1p`: paste register 1.
 
-## Search
+## Basic Search
 - `/[phrase]`: search "phrase".
 - `?[phrase]`: search in the opposite direction.
 - `n`: jump to the next phrase searched.
@@ -203,6 +199,12 @@ Select text.
 - `ctrl+O`: jump backward.
 - `ctrl+I`: jump forward.
 - `/ignore\c`: ignore case one search.
+
+## Advanced Search
+- `:vim /function/ %`: grep 'function' in the current file.
+- `:cn` go to the next ocasion of the command above.
+- `:cp` go to the previous ocasion of the command above.
+- `:cd [cmd]`: execute cmd to all greped ocasions.
 
 ## Replace
 - `rx`: replace the character with the `x`.
