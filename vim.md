@@ -141,6 +141,7 @@ Insert text.
 - `ci)`: change inside parens.
 - `c/word`: change everything before word.
 - `ctrl + R [register]`: paste the register in the command mode.
+- `ctrl + R=`: evalute a math expression.
 
 ## Visual Mode
 Select text.
@@ -152,6 +153,11 @@ Select text.
 - `:w [filename]`: save the selected text to a file.
 
 ## Command Mode
+Execute command in vim. All commands can operste on the current line or in a set of lines.
+
+- `:1,5[cmd]`: operates between lines 1 and 5.
+- `:%[cmd]`: operates on all lines.
+- `:'<,'>[cmd]`: operates on selected text.
 - `ctrl + P`: go up in the command mode.
 - `ctrl + N`: go down in the command mode.
 - `ctrl + R [ctrl + W]`: paste the word unser the cursor in the command mode.
@@ -159,6 +165,10 @@ Select text.
 - `:retab`: correct indentation.
 - `:ab [abreviation] [word]`: create an abreviation.
 - `:so $VIMRUNTIME/syntax/hitest.vim`: show all highlight groups active.
+- `:sort`: sort.
+- `:!sort -n`: sort numbers.
+- `:normal`: execute a normal command.
+- `:!uniq -c`: count duplicated lines.
 
 ## Registers
 - Almost all registers start with `"`.
@@ -273,6 +283,7 @@ Arguments are like buffers lists only the original files opened hen vim started.
 - `:arga [file]`: add file to argument list.
 - `:args`: list all arguments.
 - `:args **/*.js`: add all JS files to the arg list.
+- `:argdo [cmd]`: do for all args.
 - `:n`: got to next arg.
 - `##`: represents all files in the arg list. Can be used like `%.`
 
