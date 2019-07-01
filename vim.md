@@ -158,6 +158,7 @@ Execute command in vim. All commands can operste on the current line or in a set
 - `:1,5[cmd]`: operates between lines 1 and 5.
 - `:%[cmd]`: operates on all lines.
 - `:'<,'>[cmd]`: operates on selected text.
+- `:[cmd] | [cmd]`: execute two or more commands at once.
 - `ctrl + P`: go up in the command mode.
 - `ctrl + N`: go down in the command mode.
 - `ctrl + R [ctrl + W]`: paste the word unser the cursor in the command mode.
