@@ -166,7 +166,7 @@ Execute command in vim. All commands can operste on the current line or in a set
 - `:ab [abreviation] [word]`: create an abreviation.
 - `:so $VIMRUNTIME/syntax/hitest.vim`: show all highlight groups active.
 - `:sort`: sort.
-- `:!sort -n`: sort numbers.
+- `:sort n`: sort numbers.
 - `:normal`: execute a normal command.
 - `:!uniq -c`: count duplicated lines.
 
