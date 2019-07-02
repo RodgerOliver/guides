@@ -4,24 +4,49 @@ Tmux is a terminal multiplier.
 
 Run `tmux` to create a virtual terminal.
 
-When on tmux terminal press `ctrl-b` (^B) to make tmux listen for a command.
+Tmux waits for a prefix to execute a command and all commands must start with the prefix. The default prefix is `ctrl + B`.
 
 The current tmux window will be with a start (*).
 
 ## Inside Tmux
-* `^B c` - create a new tmux window
-* `^B ,` - rename the current window
-* `^B p` - go to previous window
-* `^B n` - go to next window
-* `^B w` - list the windows
-* `^B %` - split vertically
-* `^B d` - detach from the session
-* `^B &` - kill current session
-* `^B ?` - list all keybindings
+### Windows (Tabs)
+- `c`: new window
+- `,`: rename window
+- `p`: previous window
+- `n`: next window
+- `w`: list windows
+- `&`: kill window
+- `[numbers]`: go to specific window
+- `f`: find window
+
+### Panes (Splits)
+- `%`: split horizontally
+- `"`: split vertically
+- `;`: go to last pane
+- `q`: show pane numbers
+- `x`: kill pane
+- `<space>`: toggle layouts
+- `o`: cycle through panes
+- `C-O`: cycle panes
+- `{`: move pane to previous position
+- `}`: move pane to next position
+
+### Session
+- `)`: next session
+- `(`: previous session
+- `s`: list sessions
+- `$`: rename session
+- `:new`: new session
+
+### Misc
+- `d`: detach from the session
+- `?`: list all keybindings
+- `t`: big clock
 
 ## Outside Tmux
-* `tmux list-sessions`
-  * `tmux ls`
-* `tmux new -s [session name]`
-* `tmux attach -t [session name]`
-* `tmux kill-session -t [session name]`
+- `tmux list-sessions`
+  - `tmux ls`
+- `tmux new -s [session name]`
+- `tmux attach -t [session name]`
+  - `tmux a`
+- `tmux kill-session -t [session name]`
