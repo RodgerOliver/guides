@@ -158,6 +158,7 @@ Execute command in vim. All commands can operste on the current line or in a set
 - `:1,5[cmd]`: operates between lines 1 and 5.
 - `:%[cmd]`: operates on all lines.
 - `:'<,'>[cmd]`: operates on selected text.
+- `:[cmd] | [cmd]`: execute two or more commands at once.
 - `ctrl + P`: go up in the command mode.
 - `ctrl + N`: go down in the command mode.
 - `ctrl + R [ctrl + W]`: paste the word unser the cursor in the command mode.
@@ -166,7 +167,7 @@ Execute command in vim. All commands can operste on the current line or in a set
 - `:ab [abreviation] [word]`: create an abreviation.
 - `:so $VIMRUNTIME/syntax/hitest.vim`: show all highlight groups active.
 - `:sort`: sort.
-- `:!sort -n`: sort numbers.
+- `:sort n`: sort numbers.
 - `:normal`: execute a normal command.
 - `:!uniq -c`: count duplicated lines.
 
