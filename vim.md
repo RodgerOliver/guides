@@ -213,8 +213,12 @@ Execute command in vim. All commands can operste on the current line or in a set
 
 ## Advanced Search
 - `:vim /function/ %`: grep 'function' in the current file.
-- `:cn` go to the next ocasion of the command above.
-- `:cp` go to the previous ocasion of the command above.
+  - `:vimgrep 'function' **`: recursive search.
+- `:grep -R 'function' *`: same as above but faster.
+- `:copen`: open quickfix list open quickfix list
+- `:cclose`: close quickfix list open quickfix list.
+- `:cn`: go to the next ocasion of the command above.
+- `:cp`: go to the previous ocasion of the command above.
 - `:cd [cmd]`: execute cmd to all greped ocasions.
 
 ## Replace
