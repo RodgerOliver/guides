@@ -30,6 +30,7 @@ The current tmux window will be with a start (*).
 - `C-O`: cycle panes
 - `{`: move pane to previous position
 - `}`: move pane to next position
+- `z`: toggle fullscreen
 
 ### Session
 - `)`: next session
