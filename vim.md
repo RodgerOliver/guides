@@ -414,6 +414,18 @@ Live preview of markdown.
 - `let g:instant_markdown_autostart = 0`
 - `nnoremap <leader>p :InstantMarkdownPreview<CR>`
 
+### Debug PHP
+- Install php-xdebug.
+- Find the `php.ini` file.
+- Add this to the file above.
+```
+[Xdebug]
+zend_extension=/usr/lib/php/20170718/xdebug.so
+xdebug.remote_enable=on
+xdebug.remote_connect_back=on
+```
+- Configure `.vimrc` file.
+
 ## Plugin's Features
 
 ### Completion
