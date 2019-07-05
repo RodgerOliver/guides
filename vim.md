@@ -322,6 +322,13 @@ Sequence of commands recorded to a register.
 - 'nore', `n`, `i` and `v` are prefixes for `map` and can be combined.
 
 ## Diff Files
+- `dp`: put changes under the cursor.
+  - `:diffput`
+- `do`: get (obtain) changes.
+  - `:diffget`
+- `:diffupdate`
+- `]c`: jump to next diff.
+- `[c`: jump to previous diff.
 - Split them vertically.
 - Pair the scroll on both.
   - `:set scrollbind`
