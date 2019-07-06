@@ -420,11 +420,13 @@ Live preview of markdown.
 - Add this to the file above.
 ```
 [Xdebug]
-zend_extension=/usr/lib/php/20170718/xdebug.so
+zend_extension=/path/to/xdebug.so
 xdebug.remote_enable=on
-xdebug.remote_connect_back=on
+xdebug.remote_handler=dbgp
+xdebug.remote_host=localhost
+xdebug.remote_port=9000
 ```
-- Configure `.vimrc` file.
+- Add the `Xdebug Helper` plugin for your browser that sets cookies that will make the debuging process work properly.
 
 ## Plugin's Features
 
