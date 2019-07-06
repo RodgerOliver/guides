@@ -425,8 +425,14 @@ xdebug.remote_enable=on
 xdebug.remote_handler=dbgp
 xdebug.remote_host=localhost
 xdebug.remote_port=9000
+; accept all connections back
+; xdebug.remote_connection_back=on
 ```
 - Add the `Xdebug Helper` plugin for your browser that sets cookies that will make the debuging process work properly.
+- Add `xdebug.remote_autostart=1` to the `php.ini` to autostartthe debug.
+  - `hhtp:localhost/?XDEBUG_SESSION_START=1` also works.
+- Xdebug client is the application (server).
+- Xdebug server is the IDE (Vim).
 
 ## Plugin's Features
 
