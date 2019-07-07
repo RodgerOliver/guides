@@ -256,6 +256,8 @@ Windows are buffer viewports.
 - `ctrl + W v`: split vertically.
 - `crtl + W [h|j|k|l|w]`: move between windows.
 - `crtl + W [H|J|K|L|W]`: move windows around.
+- `ctrl + W [+|-]`: resize horizontally.
+- `ctrl + W [<|>]`: resize vertically.
 - `crtl + W q`: closes the current window.
 - `crtl + W x`: exchange windows.
 - `crtl + W [r|R]`: rotate window.
