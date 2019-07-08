@@ -42,7 +42,8 @@ The current tmux window will be with a start (*).
 ### Copy and Paste
 - `[`: enter copy mode
 - `<space>`: start copy, on copy mode
-- `<enter>`: copy text, on copy mode
+- `<enter>`: copy text and quit, on copy mode
+- `q`: quit copy mode
 - `]`: paste text
 
 ### Misc
