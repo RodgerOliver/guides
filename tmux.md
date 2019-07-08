@@ -39,6 +39,12 @@ The current tmux window will be with a start (*).
 - `$`: rename session
 - `:new`: new session
 
+### Copy and Paste
+- `[`: enter copy mode
+- `<space>`: start copy, on copy mode
+- `<enter>`: copy text, on copy mode
+- `]`: paste text
+
 ### Misc
 - `d`: detach from the session
 - `?`: list all keybindings
