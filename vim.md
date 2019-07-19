@@ -378,6 +378,16 @@ Plug 'flazz/vim-colorschemes'
 call plug#end()
 ```
 
+### CtrlP
+- `Ctrl + t`: open file in a new tab.
+- `Ctrl + x`: open file in a horizontal split.
+- `Ctrl + v`: open file in a vertical split.
+
+### NerdTree
+- `t`: open file in a new tab.
+- `i`: open file in a horizontal split.
+- `s`: open file in a vertical split.
+
 ### Vim-Airline
 Vim-Airline without **powerline** fonts and symbols is weird. Airline is a pure vim version of powerline.
 
