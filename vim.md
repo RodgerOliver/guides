@@ -312,6 +312,7 @@ Sequence of commands recorded to a register.
 
 - `q [register | key] [commands] q`: create macros.
 - `@[register]`: run macros.
+- `:normal [number]@[register]`: run macros.
 - `m[register]`: mark where the cursor is at on the register.
 - `M[register]`: mark where the cursor is at on the register and be be used in different files.
 - `\[register]`: go to the register location.
