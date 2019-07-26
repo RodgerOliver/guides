@@ -147,6 +147,14 @@ To update your local machine with the GitHub repo version.
 
 To search for commits that are not pulled in the local repo.
 
+## Collaborating On Github
+
+### Project That You Don't Own
+- Fork the repo.
+- Clone to your local machine.
+- Create a branch and work on it.
+- Make a pull request.
+
 ## Additional
 
 ### Remove Large Files All History
