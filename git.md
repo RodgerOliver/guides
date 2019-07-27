@@ -150,6 +150,8 @@ To search for commits that are not pulled in the local repo.
 ## Collaborating On Github
 
 ### Project That You Don't Own
+On these repos you can clone and read it, but you cant write to it.
+
 - Fork the repo.
 - Clone to your local machine.
 - Create a branch and work on it.
