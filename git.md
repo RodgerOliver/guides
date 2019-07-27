@@ -147,13 +147,34 @@ To update your local machine with the GitHub repo version.
 
 To search for commits that are not pulled in the local repo.
 
+# Fork
+
+### Sync A Fork
+
+`git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
+
+Configurea remote that points to the original repository.
+
+`git fetch upstream`
+
+Get changed (fetch) branches and commits.
+
+`git checkout master`
+
+Switch to master branch.
+
+`git merge upstream/master`
+`git pull upstream master`
+
+Merge the changes into master. Or you can pull them.
+
 ## Collaborating On Github
 
 ### Project That You Don't Own
+
 On these repos you can clone and read it, but you cant write to it.
 
-- Fork original the repo.
-- Clone the fork to your local machine.
+- Fork original the repo and clone the fork to your local machine.
 - Add the original repo as a remote called upstream.
   - Origin points to your GitHub fork of the project. You can read and write to this remote.
   - Upstream points to the main project’s GitHub repository. You can only read from this remote.
@@ -161,6 +182,27 @@ On these repos you can clone and read it, but you cant write to it.
 - You can squash the commits for a cleaner history.
 - Push the changes to the fork.
 - Make a pull request.
+
+### Project That You Are On
+
+#### Approaches
+
+1. Fork -> Clone -> Branch -> Commit -> Pull Request
+2. Clone -> Branch -> Commit -> Pull Request
+
+#### Workflows
+
+1. Feature Branch
+  - Master
+  - feature1
+  - feature2
+  - All features are merged to Master.
+2. Gitflow
+  - Master
+  - Develop
+  - feature1
+  - feature2
+  - Features are merged to Develop, analyzed and merged to Master.
 
 ## Additional
 
