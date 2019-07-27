@@ -152,9 +152,14 @@ To search for commits that are not pulled in the local repo.
 ### Project That You Don't Own
 On these repos you can clone and read it, but you cant write to it.
 
-- Fork the repo.
-- Clone to your local machine.
+- Fork original the repo.
+- Clone the fork to your local machine.
+- Add the original repo as a remote called upstream.
+  - Origin points to your GitHub fork of the project. You can read and write to this remote.
+  - Upstream points to the main project’s GitHub repository. You can only read from this remote.
 - Create a branch and work on it.
+- You can squash the commits for a cleaner history.
+- Push the changes to the fork.
 - Make a pull request.
 
 ## Additional
