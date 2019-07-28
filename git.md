@@ -103,6 +103,10 @@ Remove the branch if it's merged.
 
 Remove the branch by force.
 
+`git checkout -m master`
+
+Change to the master branch and merge the changes.
+
 ## Merge branches
 
 `git merge [branch name]`
