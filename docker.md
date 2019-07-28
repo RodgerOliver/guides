@@ -14,9 +14,14 @@ List containers.
 
 List images.
 
-`docker -i -t ubuntu:19.10 /bin/bash`
+`docker run -ti [image]:[version] [process]`
+`docker run -i -t ubuntu:19.10 /bin/bash`
 
 Install Ubuntu 19.10 image and run the container.
+
+`docker create ubuntu`
+
+Create a container with an image.
 
 `Ctrl + PQ`
 
@@ -34,9 +39,17 @@ Attach to a container.
 
 Diff changes since container was created.
 
-`docker stop [container id]`
+`docker [start|pause|unpause|stop] [container id]`
 
-Stop container.
+Start, pause or stop a container.
+
+`docker [stats|top] [container id]`
+
+Info about the container.
+
+`docker rm [container id]`
+
+Remove container.
 
 `docker run -i -t -p 8080:80 ubuntu:19.10 /bin/bash`
 
