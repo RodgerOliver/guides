@@ -37,6 +37,28 @@ If you want to stage a deleted file use `git rm [file]`, this will delete from t
 
 If you want to work on a file an commit before the work is done remove the wanted files from the stage area.
 
+## Save Uncommited Changes
+
+`git stash save "[message]"`
+
+Save all the uncommited changes.
+
+`git stash list`
+
+List the stashes.
+
+`git stash apply [stash]`
+
+Apply the stash.
+
+`git stash pop [stash]`
+
+Apply and delete the stash.
+
+`git stash drop [stash]`
+
+Delete the stash.
+
 ## See Changes In The Files
 
 `git diff .`
