@@ -14,6 +14,10 @@ List containers.
 
 List images.
 
+`sudo docker rmi ubuntu:19.10`
+
+Remove images.
+
 `docker run -ti [image]:[version] [process]`
 `docker run -i -t ubuntu:19.10 /bin/bash`
 
