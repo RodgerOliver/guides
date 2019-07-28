@@ -105,7 +105,9 @@ This command will delete all the previous commits but keep the changes. If you w
 
 This command can be used to change lines in files, edit commit messages and more.
 
-## Create branches
+## Branches
+
+### Create branches
 
 `git branch [branch name]`
 
@@ -125,11 +127,15 @@ Remove the branch if it's merged.
 
 Remove the branch by force.
 
+`git push origin --delete [branch name]`
+
+Remove remote branch.
+
 `git checkout -m master`
 
 Change to the master branch and merge the changes.
 
-## Merge branches
+### Merge branches
 
 `git merge [branch name]`
 
@@ -137,13 +143,19 @@ This will add the changes made in the beta branch to the master branch.
 
 When a conflict occures, edit the needed files, add and commit the changes.
 
-### Fast forward merge
+#### Fast forward merge
 
 The commit history is one straight line. This happens when no commits are made in the master branch. To force it use `git rebase`.
 
-### Recursive merge
+#### Recursive merge
 
 This makes to lines in the history, one for the master branch and one for the other deleted branch. This happens when there new commits in the master branch when you merge. To force it use `git merge --no-ff`.
+
+### Push Branches
+
+`git push origin script`
+
+Push the local script branch to origin remote.
 
 ## Working locally
 
@@ -171,7 +183,7 @@ To update your local machine with the GitHub repo version.
 
 `git fetch`
 
-To search for commits that are not pulled in the local repo.
+To search for commits and branches that are not pulled in the local repo.
 
 # Fork
 
@@ -179,7 +191,7 @@ To search for commits that are not pulled in the local repo.
 
 `git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
 
-Configurea remote that points to the original repository.
+Configure a remote that points to the original repository.
 
 `git fetch upstream`
 
@@ -190,9 +202,12 @@ Get changed (fetch) branches and commits.
 Switch to master branch.
 
 `git merge upstream/master`
+
+Merge the changes into master.
+
 `git pull upstream master`
 
-Merge the changes into master. Or you can pull them.
+Or pull everything to master.
 
 ## Collaborating On Github
 
