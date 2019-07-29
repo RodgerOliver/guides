@@ -106,18 +106,19 @@ This command will delete all the previous commits but keep the changes. If you w
 This command can be used to change lines in files, edit commit messages and more.
 
 ## Branches
-
-### Create branches
+Branches are used to organize the code, this way you can work on a new feature, have a beta version of your code, and still use the complete version.
 
 `git branch [branch name]`
 
+Create branch.
+
 `git branch -a`
 
-Branches are used to organize the code, this way you can work on a new feature, have a beta version of your code, and still use the complete version.
+List all branches.
 
 `git checkout -b [branch name]`
 
-This way you create a branch and checkout in it.
+Create a branch and checkout in it.
 
 `git branch -d [branch name]`
 
@@ -126,6 +127,10 @@ Remove the branch if it's merged.
 `git branch -D [branch name]`
 
 Remove the branch by force.
+
+`git push origin [branch name]`
+
+Push the local branch to origin remote.
 
 `git push origin --delete [branch name]`
 
@@ -150,12 +155,6 @@ The commit history is one straight line. This happens when no commits are made i
 #### Recursive merge
 
 This makes to lines in the history, one for the master branch and one for the other deleted branch. This happens when there new commits in the master branch when you merge. To force it use `git merge --no-ff`.
-
-### Push Branches
-
-`git push origin script`
-
-Push the local script branch to origin remote.
 
 ## Working locally
 
