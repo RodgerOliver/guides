@@ -156,6 +156,24 @@ The commit history is one straight line. This happens when no commits are made i
 
 This makes to lines in the history, one for the master branch and one for the other deleted branch. This happens when there new commits in the master branch when you merge. To force it use `git merge --no-ff`.
 
+## Merge A Pull Request Locally
+
+```
+git fetch origin
+git checkout -b develop origin/develop
+git merge master
+```
+
+Get changes.
+
+```
+git checkout master
+git merge --no-ff develop
+git push origin master
+```
+
+Merge changes and update the repo.
+
 ## Working locally
 
 `git remote -v`
