@@ -226,6 +226,14 @@ Merge the changes into master.
 
 Or pull everything to master.
 
+### Fetch Branch From Another Fork
+
+```
+git remote add [remote name] [repo url]
+git fetch [remote name]
+git checkout -b [remote branch] [repo owner]/[remote branch]
+```
+
 ## Collaborating On Github
 
 ### Project That You Don't Own
