@@ -65,6 +65,10 @@ Delete the stash.
 
 Get all changes in the files compared to the last commit.
 
+`git diff --cached`
+
+Diff staged changes compared to the last commit.
+
 ## Commit
 
 `git commit -m "[message]"`
