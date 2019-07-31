@@ -154,15 +154,18 @@ Change to the master branch and merge the changes.
 
 ### Merge branches
 
-`git merge [branch name]`
+```
+git checkout master
+git merge [branch name]
+```
 
-This will add the changes made in the beta branch to the master branch.
+This will add the changes made in the beta branch to the master branch. This command handles if the merge is going to be recursive or fast-forward.
 
 When a conflict occures, edit the needed files, add and commit the changes.
 
 #### Fast forward merge
 
-The commit history is one straight line. This happens when no commits are made in the master branch. To force it use `git rebase`.
+The commit history is one straight line. This happens when no commits are made in the master branch. To force it use `git rebase`. This changes the commit history and is better to use when the branch is private.
 
 ```
 git checkout [branch]
@@ -174,7 +177,7 @@ git <merge/rebase> [branch]
 
 #### Recursive merge
 
-This makes to lines in the history, one for the master branch and one for the other deleted branch. This happens when there new commits in the master branch when you merge. To force it use `git merge --no-ff`.
+This makes two lines in the history, one for the master branch and one for the other deleted branch. This happens when there new commits in the master branch when you merge. To force it use `git merge --no-ff`.
 
 ## Merge A Pull Request Locally
 
