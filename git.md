@@ -69,6 +69,10 @@ Get all changes in the files compared to the last commit.
 
 Diff staged changes compared to the last commit.
 
+`git show [commit hash]`
+
+Show changes made on that commit.
+
 ## Commit
 
 `git commit -m "[message]"`
