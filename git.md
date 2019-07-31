@@ -164,6 +164,14 @@ When a conflict occures, edit the needed files, add and commit the changes.
 
 The commit history is one straight line. This happens when no commits are made in the master branch. To force it use `git rebase`.
 
+```
+git checkout [branch]
+git rebase master
+git push -uf origin [branch]
+git checkout master
+git <merge/rebase> [branch]
+```
+
 #### Recursive merge
 
 This makes to lines in the history, one for the master branch and one for the other deleted branch. This happens when there new commits in the master branch when you merge. To force it use `git merge --no-ff`.
