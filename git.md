@@ -297,6 +297,27 @@ On these repos you can clone and read it, but you cant write to it.
   - feature2
   - Features are merged to Develop, analyzed and merged to Master.
 
+## Deploy With Git
+
+### Server
+
+```
+cd /var/www/project/
+mkdir app.git && cd app.git
+git init --bare
+vim hooks/post-receive
+> #!/bin/bash
+> GIT_WORK_TREE=/var/www/project git checkout -f
+chmod +x hooks/post-receive
+```
+
+### Local
+
+```
+git remote add deploy ssh://user@host:port/var/www/project/app.git
+git push deploy master
+```
+
 ## Additional
 
 ### Remove Large Files All History
