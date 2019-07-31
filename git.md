@@ -214,6 +214,10 @@ To update your local machine with the GitHub repo version.
 
 To search for commits and branches that are not pulled in the local repo.
 
+`git fetch --all --prune`
+
+To search for all commits and all branches that are not pulled in the local repo and deleted current remote branchs delete in the remote server.
+
 # Fork
 
 ### Sync A Fork
