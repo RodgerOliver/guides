@@ -126,9 +126,9 @@ Branches are used to organize the code, this way you can work on a new feature, 
 
 Create branch.
 
-`git branch -a`
+`git branch -avv`
 
-List all branches.
+List all branches local and remote and their upstreams.
 
 `git checkout -b [branch name]`
 
