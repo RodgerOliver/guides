@@ -31,6 +31,8 @@ Use the `.`  instead of the file name to stage all changed files.
 
 If you want to stage a deleted file use `git rm [file]`, this will delete from the repo and from de local system. If you want to delete only from the repo use `git rm --cached [file]`.
 
+To add hunks, some lines inside some files, use `git add -p`.
+
 ## Unstage Files
 
 `git rm --cached [file]`
