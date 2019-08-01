@@ -4,24 +4,24 @@
 
 Git is a 'version control system' that controls the changes of the files.
 
-## Set global variables
+## Set Global Variables
 
 `git config --global user.email "[email]"`
 `git config --global user.name "[name]"`
 
-## Initiate git in a folder
+## Initiate Git In A Folder
 
 `git init`
 
 A .git folder is created with all the config files and information about your repo.
 
-## Get the current status of the repo
+## Get The Current Status Of The Repo
 
 `git status`
 
 This will list the changed files and tell if a file is staged or not.
 
-## Stage files
+## Stage Files
 
 `git add [file]`
 
@@ -31,7 +31,7 @@ Use the `.`  instead of the file name to stage all changed files.
 
 If you want to stage a deleted file use `git rm [file]`, this will delete from the repo and from de local system. If you want to delete only from the repo use `git rm --cached [file]`.
 
-## Unstage files
+## Unstage Files
 
 `git rm --cached [file]`
 
@@ -87,7 +87,7 @@ When a commit is make a history is created with the changes that you have made t
 
 To override the last commit with the current changes made.
 
-## Commit history
+## Commit History
 
 `git log`
 
@@ -95,7 +95,7 @@ To override the last commit with the current changes made.
 
 This will list all commits made in order to identify them.
 
-## Get back in the commits
+## Get Back In The Commits
 
 `git checkout [commit id]`
 
@@ -152,7 +152,7 @@ Remove remote branch.
 
 Change to the master branch and merge the changes.
 
-### Merge branches
+### Merge Branches
 
 ```
 git checkout master
@@ -163,7 +163,7 @@ This will add the changes made in the beta branch to the master branch. This com
 
 When a conflict occures, edit the needed files, add and commit the changes.
 
-#### Fast forward merge
+#### Fast Forward Merge
 
 The commit history is one straight line. This happens when no commits are made in the master branch. To force it use `git rebase`. This changes the commit history and is better to use when the branch is private.
 
@@ -175,7 +175,7 @@ git checkout master
 git <merge/rebase> [branch]
 ```
 
-#### Recursive merge
+#### Recursive Merge
 
 This makes two lines in the history, one for the master branch and one for the other deleted branch. This happens when there new commits in the master branch when you merge. To force it use `git merge --no-ff`.
 
@@ -197,7 +197,7 @@ git push origin master
 
 Merge changes and update the repo.
 
-## Working locally
+## Working Locally
 
 `git remote -v`
 
@@ -207,7 +207,7 @@ To get all the remote paths that your local repo can be pushed.
 
 To clone from GitHub to your local machine.
 
-## Push and pull commits
+## Push And Pull Commits
 
 `git remote add origin [repo link (https or ssh)]`
 
