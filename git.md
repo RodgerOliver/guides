@@ -307,7 +307,7 @@ mkdir app.git && cd app.git
 git init --bare
 vim hooks/post-receive
 > #!/bin/bash
-> GIT_WORK_TREE=/var/www/project git checkout -f
+> git --work-tree=/var/www/project --git-dir=/var/www/project/app.git checkout -f
 chmod +x hooks/post-receive
 ```
 
