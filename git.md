@@ -179,6 +179,15 @@ git <merge/rebase> [branch]
 
 This makes two lines in the history, one for the master branch and one for the other deleted branch. This happens when there new commits in the master branch when you merge. To force it use `git merge --no-ff`.
 
+### Update Branch
+
+```
+git checkout master
+git pull origin master
+git checkout [branch]
+git merge master
+```
+
 ## Merge A Pull Request Locally
 
 ```
