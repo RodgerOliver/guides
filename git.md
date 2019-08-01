@@ -327,6 +327,7 @@ chmod +x hooks/post-receive
 ```
 git remote add deploy ssh://user@host:port/var/www/project/app.git
 git push deploy master
+git push deploy branch:master -f
 ```
 
 ## Additional
