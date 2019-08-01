@@ -142,9 +142,18 @@ Remove the branch if it's merged.
 
 Remove the branch by force.
 
+`git branch -m [new name]`
+`git branch -m [old name] [new name]`
+
+Rename local branch.
+
 `git push origin [branch name]`
 
 Push the local branch to origin remote.
+
+`git push origin [local branch]:[remote branch]`
+
+Apply local branch changes to remote branch name.
 
 `git push origin --delete [branch name]`
 
