@@ -92,10 +92,13 @@ To override the last commit with the current changes made.
 ## Commit History
 
 `git log`
-
 `git log --all --graph --oneline --decorate`
 
 This will list all commits made in order to identify them.
+
+`git log master..[branch]`
+
+Show commits made on a specific branch.
 
 ## Get Back In The Commits
 
