@@ -366,7 +366,7 @@ The commands can be followed by a buffer identifier, like a partial match of its
 - `K`: go to the man page of the selected text.
 
 ## FTP
-Vim has a built in support for ftp. To connect type `vim ftp://host/path//`. To open the tree type `:Explore`. More info in `:h pi_netrw.txt`.
+Vim has a built in support for ftp. To connect type `vim ftp://user@host/path/`. To open the tree type `:Explore`. To save type `:Nwrite`. More info in `:h pi_netrw.txt`.
 
 ## [Vim Scripts](https://github.com/christoomey/your-first-vim-plugin)
 
