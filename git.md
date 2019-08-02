@@ -199,7 +199,7 @@ This makes two lines in the history, one for the master branch and one for the o
 git checkout master
 git pull origin master
 git checkout [branch]
-git merge master
+git <merge/rebase> master
 ```
 
 ## Merge A Pull Request Locally
