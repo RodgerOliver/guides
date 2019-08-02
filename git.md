@@ -175,7 +175,9 @@ git merge [branch name]
 
 This will add the changes made in the beta branch to the master branch. This command handles if the merge is going to be recursive or fast-forward.
 
-When a conflict occures, edit the needed files, add and commit the changes.
+When the same line of the same file is editted on both branches there is a merge conflict. When this happens, edit the needed files, add and commit the changes.
+
+When using `git merge` the HEAD stays on the branch that you are on, but with `git rebase` the HEAD moves until a conflict occurs.
 
 #### Fast Forward Merge
 
