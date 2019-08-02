@@ -155,6 +155,7 @@ Select text.
 ## Command Mode
 Execute command in vim. All commands can operste on the current line or in a set of lines.
 
+- `q:`: show command history on a buffer.
 - `:1,5[cmd]`: operates between lines 1 and 5.
 - `:%[cmd]`: operates on all lines.
 - `:'<,'>[cmd]`: operates on selected text.
