@@ -327,6 +327,8 @@ Sequence of commands recorded to a register.
 - 'nore', `n`, `i` and `v` are prefixes for `map` and can be combined.
 
 ## Diff Files
+The commands can be followed by a buffer identifier, like a partial match of its name.
+
 - `dp`: put changes under the cursor.
   - `:diffput`
 - `do`: get (obtain) changes.
@@ -451,6 +453,17 @@ xdebug.remote_port=9000
   - `hhtp:localhost/?XDEBUG_SESSION_START=1` also works.
 - Xdebug client is the application (server).
 - Xdebug server is the IDE (Vim).
+
+### Fugitive
+
+#### Merge Conflict
+- Open the file with conflict in vim.
+- `:Gvdiffsplit!` for a 3-way-merge.
+- Stay on the middle buffer that is the file with conflict.
+- The left buffer is the HEAD, the target of the merge, the target branch.
+- The right buffer is the branch that is comming, the merge branch.
+- `:diffget //2` get changes of the target branch.
+- `:diffget //3` get changes of the merge branch.
 
 ## Plugin's Features
 
