@@ -252,6 +252,35 @@ To search for commits and branches that are not pulled in the local repo.
 
 To search for all commits and all branches that are not pulled in the local repo and deleted current remote branchs delete in the remote server.
 
+## Tags
+
+Tags are used to mark specific points in the history to control your versions.
+
+`git tag v1.0`
+`git tag v1.0 [commit hash]`
+`git tag -a v1.0 -m 'stable version 1.0'`
+
+Create tag or an annoted tag.
+
+`git tag`
+`git show v1.0`
+`git tag -l 'v1.*'`
+
+Show tags.
+
+`git push origin v1.0`
+`git push --tags`
+
+Push tag.
+
+`git tag --delete v1.0`
+
+Delete tag locally.
+
+`git push origin --delete v1.0`
+
+Delete tag from the remote.
+
 ## Fork
 
 ### Sync A Fork
