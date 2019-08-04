@@ -258,6 +258,37 @@ git checkout master
 git checkout -b new_quickfix2
 git cherry-pick quickfix1..quickfix2
 git branch -D quickfix2
+git branch -m new_quickfix2 quickfix2
+```
+
+### Second Example
+
+```
+FROM
+
+master A - B - C - D - E
+
+TO
+
+feature       C - D - E
+             /
+master A - B
+```
+
+#### Moving To An Existing Branch
+
+```
+git checkout feature
+git merge master
+git checkout master
+git reset --hard HEAD~3
+```
+
+#### Moving To An Existing Branch
+
+```
+git branch feature
+git reset --hard HEAD~3
 ```
 
 ## Working Locally
