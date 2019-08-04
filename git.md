@@ -4,6 +4,29 @@
 
 Git is a 'version control system' that controls the changes of the files.
 
+```
+> HEAD, master and branch_name are just other names for the commit hash that they point to.
+
+> HEAD~1: commit hash of the previous commit from HEAD.
+
+> HEAD^1: commit hash of the next commit from HEAD.
+
+        B
+        | F
+        | |
+        |/
+        A
+        |
+        M
+
+> git diff master..feature == git diff master feature
+> last hash of master (B) against last hash of feature (F)
+
+> git diff master...feature
+> changes since it was branched off from master
+> A against F
+```
+
 ## Set Global Variables
 
 `git config --global user.email "[email]"`
