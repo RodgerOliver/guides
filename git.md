@@ -222,6 +222,44 @@ git push origin master
 
 Merge changes and update the repo.
 
+## Move Commits To Another Branch
+
+### First Example
+
+```
+FROM
+
+o-o-X (master HEAD)
+     \
+      q1a--q1b (quickfix1 HEAD)
+              \
+               q2a--q2b (quickfix2 HEAD)
+
+TO
+
+      q2a'--q2b' (quickfix2 HEAD)
+     /
+o-o-X (master HEAD)
+     \
+      q1a--q1b (quickfix1 HEAD)
+```
+
+#### Rebase Onto
+
+```
+git checkout master
+git rebase --onto master quickfix1 quickfix2
+```
+
+#### Cherry-Pick
+
+```
+git checkout master
+git checkout -b new_quickfix2
+git cherry-pick quickfix1..quickfix2
+git branch -D quickfix2
+```
+
 ## Working Locally
 
 `git remote -v`
