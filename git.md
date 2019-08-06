@@ -375,6 +375,11 @@ Delete tag locally.
 
 Delete tag from the remote.
 
+## Ignore Files
+
+- Create a `.gitignore` file and add the name of the file or folder to ignore. This is recursive.
+- To ignore files without creating a `.gitignore` put their paths inside `.git/info/exclude`.
+
 ## Fork
 
 ### Sync A Fork
