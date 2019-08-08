@@ -314,6 +314,18 @@ git branch feature
 git reset --hard HEAD~3
 ```
 
+## Binary Search Bugs
+
+Git bisect is used to search, based on tests made by you, and return a commit with the bug.
+
+```
+git bisect start
+git bisect good [hash of good commit]
+git bisect bad [hash of bad commit]
+```
+
+Now git will checkout to a middle commit. Then you can run tests. If the commit is good run `git bisect good`, otherwise run `git bisect bad`. Repeat this process until git tells you what commit had the bug.
+
 ## Working Locally
 
 `git remote -v`
