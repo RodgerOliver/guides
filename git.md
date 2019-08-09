@@ -38,6 +38,18 @@ Git is a 'version control system' that controls the changes of the files.
 
 A .git folder is created with all the config files and information about your repo.
 
+## Process To Commit
+
+Files created go to `Untracked Files` area.
+
+Files edited go to `Not Staged` area.
+
+The two areas above are also called `Working Directory`.
+
+Files added go to `Staging` area.
+
+Files on the `Staging` are go to the next commit.
+
 ## Get The Current Status Of The Repo
 
 `git status`
