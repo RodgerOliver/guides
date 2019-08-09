@@ -74,6 +74,20 @@ To add hunks, some lines inside some files, use `git add -p`.
 
 If you want to work on a file an commit before the work is done remove the wanted files from the stage area.
 
+## Move Files Arround The Staging Area
+
+`git reset HEAD [file]`
+
+Unstage file.
+
+`git checkout -- [file]`
+
+Discard changes in `Working Directory`.
+
+`git clean -df`
+
+Remove untracked files from the `Working Directory`.
+
 ## Save Uncommited Changes
 
 `git stash save "[message]"`
