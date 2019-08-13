@@ -258,7 +258,10 @@ git <merge/rebase> master
 ```
 git fetch origin
 git checkout -b develop origin/develop
-git merge master
+// make the changes here
+git checkout master
+git merge develop
+git push origin master
 ```
 
 Get changes.
