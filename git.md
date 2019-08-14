@@ -495,11 +495,18 @@ On these repos you can clone and read it, but you cant write to it.
 
 ```
 cd /var/www/project/
-mkdir app.git && cd app.git
+mkdir app.git
+cd app.git
 git init --bare
 vim hooks/post-receive
-> #!/bin/bash
-> git --work-tree=/var/www/project --git-dir=/var/www/project/app.git checkout -f
+```
+
+```
+#!/bin/bash
+git --work-tree=/var/www/project --git-dir=/var/www/project/app.git checkout -f
+```
+
+```
 chmod +x hooks/post-receive
 ```
 
