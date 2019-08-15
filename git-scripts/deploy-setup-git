@@ -47,17 +47,17 @@ elif [ $1 == "local" ]; then
 		echo "./script local [remote path] [ssh user] [ssh host] [ssh port]"
 	else
 		# verify if port is a number
+		echo "Setting up local repo to deploy a git app"
 		if [ $5 -eq $5 2>/dev/null ]; then
-			echo "Setting up local repo to deploy a git app"
 			git remote add deploy ssh://$user@$host:$port$path/app.git
-			git config --global alias.pud "push -f deploy HEAD:master"
-			echo ""
-			echo "To deploy your current repo type:"
-			echo ""
-			echo "git pud"
 		else
-			echo "Port must be a number"
+			git remote add deploy $user@$host:$path/app.git
 		fi
+		git config --global alias.pud "push -f deploy HEAD:master"
+		echo ""
+		echo "To deploy your current repo type:"
+		echo ""
+		echo "git pud"
 	fi
 fi
 
