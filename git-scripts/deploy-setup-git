@@ -1,0 +1,63 @@
+#!/bin/bash
+
+if [ -z $1 ]; then
+	echo "Configure server to receive deploy:"
+	echo "./script server [path]"
+	echo ""
+	echo "Configure local repo do deploy:"
+	echo "./script local [remote path] [ssh user] [ssh host] [ssh port]"
+	exit
+fi
+
+# server setup
+if [ $1 == "server" ]; then
+	path=$(pwd);
+	echo "Setting up server to deploy a git app"
+	# no path
+	if [ -z $2 ]; then
+		path="${path}/project"
+	else
+		# absolute path
+		if [ $(echo $2 | grep '^/') ]; then
+			path="${2}"
+			# relative path
+		else
+			path="${path}/${2}"
+		fi
+	fi
+
+	path_git="${path}/app.git"
+	mkdir -pv $path_git
+	git init --bare $path_git
+	echo -e "#!/bin/bash
+git --work-tree=$path --git-dir=$path_git checkout -f" >> "${path_git}/hooks/post-receive"
+	chmod +x "${path_git}/hooks/post-receive"
+	echo ""
+	echo "Finished"
+
+	# local setup
+elif [ $1 == "local" ]; then
+	path=$2
+	user=$3
+	host=$4
+	port=$5
+	if [ -z $2 ] || [ -z $3 ] || [ -z $4 ] || [ -z $5 ]; then
+		echo "Correct way:"
+		echo ""
+		echo "./script local [remote path] [ssh user] [ssh host] [ssh port]"
+	else
+		# verify if port is a number
+		if [ $5 -eq $5 2>/dev/null ]; then
+			echo "Setting up local repo to deploy a git app"
+			git remote add deploy ssh://$user@$host:$port$path/app.git
+			git config --global alias.pud "push -f deploy HEAD:master"
+			echo ""
+			echo "To deploy your current repo type:"
+			echo ""
+			echo "git pud"
+		else
+			echo "Port must be a number"
+		fi
+	fi
+fi
+
