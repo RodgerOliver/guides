@@ -368,6 +368,10 @@ The commands can be followed by a buffer identifier, like a partial match of its
 ## FTP
 Vim has a built in support for ftp. To connect type `vim ftp://user@host/path/`. To open the tree type `:Explore`. To save type `:Nwrite`. More info in `:h pi_netrw.txt`.
 
+## Indent All Files In A Folder
+- `:args **/*.php`
+- `:argdo execute "normal gg=G" | update`
+
 ## [Vim Scripts](https://github.com/christoomey/your-first-vim-plugin)
 
 ## Plugins
