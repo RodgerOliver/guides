@@ -27,6 +27,8 @@ Git is a 'version control system' that controls the changes of the files.
 > A against F
 ```
 
+![Git Rev List](imgs/git-rev-list.png)
+
 ## Set Global Variables
 
 `git config --global user.email "[email]"`
