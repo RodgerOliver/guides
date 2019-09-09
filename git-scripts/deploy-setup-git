@@ -25,6 +25,10 @@ if [ $1 == "server" ]; then
 			path="${path}/${2}"
 		fi
 	fi
+	# remove last slash from path
+	if [ $(echo $path | grep '/$') ]; then
+		path=$(echo $path | sed 's/\/$//')
+	fi
 
 	path_git="${path}/app.git"
 	mkdir -pv $path_git
@@ -41,6 +45,10 @@ elif [ $1 == "local" ]; then
 	user=$3
 	host=$4
 	port=$5
+	# remove last slash from path
+	if [ $(echo $path | grep '/$') ]; then
+		path=$(echo $path | sed 's/\/$//')
+	fi
 	if [ -z $2 ] || [ -z $3 ] || [ -z $4 ]; then
 		echo "Correct way:"
 		echo ""
