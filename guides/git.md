@@ -418,6 +418,25 @@ Delete tag locally.
 
 Delete tag from the remote.
 
+## Working Trees
+Working trees can be added so you can have two folders linked and checked out in different branches
+without the need to stash or clone the repo again.
+
+`git worktree add <path> <branch_name>`
+
+Add another worktree.
+
+`git worktree add --track -b <branch_name> <path> master`
+
+Checkout a new branch within a new worktree.
+
+```
+git worktree remove <path>
+git worktree prune
+```
+
+Remove working tree.
+
 ## Ignore Files
 
 - Create a `.gitignore` file and add the name of the file or folder to ignore. This is recursive.
