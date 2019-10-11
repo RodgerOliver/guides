@@ -233,6 +233,8 @@ Execute command in vim. All commands can operste on the current line or in a set
 - `:%s/new/old/gc`: change words in the whole file, but prompt to change or not.
 - `%s/word//n`: count occurrences of "word".
 - `:v/word/d`: remove every line that doesn't contain "word".
+- `:%s/,\(\S\)/, \1/g`: add space after all commas.
+  - `\(\S\)` is being used to capture the next non-space character after a comma.
 
 ## Shell Cmds
 - `:!`: execute an external command. `!` means execute in shell.
