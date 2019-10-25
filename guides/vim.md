@@ -517,6 +517,8 @@ Mappings for moving.
 - `zR | zM`: open and close all.
 - `zk | zj`: go to next and previous fold.
 - `:set nofoldenable`: open file with folds closed.
+- `:%foldc`: close all level 1 folds
+- `:%foldo`: open all level 1 folds
 - Save folds in manual method.
 
 ```
