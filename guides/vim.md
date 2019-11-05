@@ -472,6 +472,9 @@ xdebug.remote_port=9000
 - `:diffget //2` get changes of the target branch.
 - `:diffget //3` get changes of the merge branch.
 
+#### Log
+- `:0Glog`: log all commits that modified the current file.
+
 ## Plugin's Features
 
 ### Completion
