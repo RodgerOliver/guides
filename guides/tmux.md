@@ -58,3 +58,26 @@ The current tmux window will be with a start (*).
 - `tmux attach -t [session name]`
   - `tmux a`
 - `tmux kill-session -t [session name]`
+
+## Share Windows SSH
+
+Tmux can do pair programming too.
+
+SSH into the computer and open a tmux session.
+
+### Host (SSH server)
+- `tmux new-session -s [session name]`
+### Client
+- `ssh [user]@[host]`
+- `tmux attach -t [session name]`
+
+The host computer can attach to that session and they can see the same thin at thesame time.
+
+They can even type in different windows at the same time, but not at the same window.
+
+### First Computer
+- `tmux new-session -s comp1`: view your window
+- `tmux new-session -t comp1 -s comp2`: view other person's window
+### Second Computer
+- `tmux attach -t comp2`: view your window
+- `tmux attach -t comp1`: view other person's window
