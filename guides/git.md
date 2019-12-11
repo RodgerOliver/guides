@@ -578,3 +578,18 @@ Add all files based on .gitignore.
 `git commit -m ".gitignore fix"`
 
 Commit the changes.
+
+### Get Changes To WIP From Commit
+Commit hash can be a branch, and files can be `.` to get all files.
+
+`git checkout <commit hash> <files>`
+
+Brings all different files from another commit.
+
+```
+git cherry-pick <commit hash>
+git reset --soft HEAD~1
+
+```
+
+Brings all changes of the commit to WIP.
