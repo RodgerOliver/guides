@@ -1,0 +1,12 @@
+@echo off
+diskpart
+list disk
+set /p disk="Select the disk: "
+select disk %disk%
+list volume
+set /p vol="Select the volume: "
+select volume %vol%
+assign letter=Z
+exit
+z:
+

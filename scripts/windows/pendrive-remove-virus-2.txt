@@ -1,0 +1,2 @@
+attrib -h -r -s /s /d K:\*.*
+// K é a letra do drive do pendrive

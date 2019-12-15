@@ -1,0 +1,17 @@
+bootrec /fixmbr     - fix corruptions issues with master boot record
+bootrec /fixboot    - create new boot sector on HDD
+bootrec /RebuildBcd - rebuild Boot Manager
+bootrec /ScanOS
+bootsect /nt60 SYS
+bootsect /nt60 ALL
+
+```
+
+$ BCDedit /export C:\BCD_Backup
+$ C:
+$ CD boot
+$ Attrib BCD -s -h -r
+$ Ren C:\boot\bcd bcd.old
+$ Bootrec /RebuildBcd
+
+```
