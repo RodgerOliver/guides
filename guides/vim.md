@@ -236,6 +236,7 @@ Execute command in vim. All commands can operste on the current line or in a set
 - `:g/word/d`: remove every line that contains "word".
 - `:%s/,\(\S\)/, \1/g`: add space after all commas.
   - `\(\S\)` is being used to capture the next non-space character after a comma.
+- `:let cur_line = line('.') | '<,'>s/word/\=printf(',%-0d);', line('.')-cur_line)/g`: substitute word by a list of ordered numbers.
 
 ## Shell Cmds
 - `:!`: execute an external command. `!` means execute in shell.
