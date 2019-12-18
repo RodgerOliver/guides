@@ -539,6 +539,32 @@ git push deploy master
 git push deploy branch:master -f
 ```
 
+## Diff And Patch
+
+`git show [commit hash] > file.patch`
+
+Create a patch file from a commit.
+
+`git format-patch <branch> -o patches`
+
+Compare the current branch against the chosen branch, create a folder called patches and create a patch file for each commit of the current branch.
+
+`git format-patch -1 <commit hash> -o patches`
+
+Create a folder called patches and create a patch file for the commit.
+
+`git apply <patch file>`
+
+Apply patch to the working directory.
+
+`git am <patch file>`
+
+Apply patch and commit.
+
+`git apply -R <patch file>`
+
+Reverse patch.
+
 ## Additional
 
 ### Remove Large Files All History
