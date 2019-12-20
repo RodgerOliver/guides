@@ -410,7 +410,7 @@ In the README.md file has the instructions to install this font. Then change the
 
 - `:Airline<TAB>`: change airline settings.
 
-### Vim Wiki
+### VimWiki
 Create notes in Vim.
 
 - `[number]<leader>ww`: open index page.
@@ -429,6 +429,14 @@ Create notes in Vim.
 - `=`: add header level.
 - `-`: remove header level.
 - `+`: create links.
+
+#### Diary
+Diary of VimWiki.
+
+- `<leader>wi`: open diary index.
+- `<leader>w<leader>i`: generate diary links.
+- `<leader>w<leader>w`: open diary on current day.
+- `:Calendar`: open calendar.
 
 ### Commentary.vim
 Comment things on Vim.
