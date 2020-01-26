@@ -22,6 +22,8 @@ Inside the networks (servers) there are channels (rooms).
   - join / create channel to talk (channels generally start with `#`)
 - `/part [channel]`
   - leave channel
+- `/topic [channel] [new_topic]`
+  - change the topic for a channel that you are on
 
 ### Nick
 - `/nick [nickname]`
