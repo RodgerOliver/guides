@@ -73,6 +73,13 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
 - `+v`
   - user has voice on the current channel (prefix `+`).
 
+### Kick User
+
+- `/kick [channel] [nickname] [reason]`
+  - temporarily remove user from channel
+- `/mode [nickname] +/-attributes [data]`
+  - setting user's modes (for current channel only)
+
 ## Channel Management (ChanServ)
 
 All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depending on your client, `/cs` or `/chanserv` may not work.
