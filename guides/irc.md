@@ -45,6 +45,12 @@ Inside the networks (servers) there are channels (rooms).
 - `/me action`
   - print "[yourname] action"
 
+### Other General Commands
+- `/invite [nickname] [channel]`
+  - invite a nickname to a channel that you are on
+- `/away <message>`
+  - leave a message indicating that you are currently not paying attention to IRC. When someone sends you a message, they will automatically see your away message. Using `/away` with no message marks you as no longer being away and removes your previous message
+
 ## Nick Management (NickServ)
 
 All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your client, `/ns` may not work.
