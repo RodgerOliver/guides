@@ -95,6 +95,39 @@ All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depend
 - `/cs set [channel] leaveops [on|off]`
   - whether or not to allow the first person who join the channel to get ops
 
+### Channel Modes
+
+Set a mode to the channel with: `/mode [channel] +/-[mode]`
+
+- `+n`
+  - disallow external messages
+- `+t`
+  - only op/hops can set the topic
+- `+p`
+  - set the channel as invisible in /list
+- `+s`
+  - set the channel as invisible in /list and /whois
+- `+i`
+  - set the channel as closed unless the person was invited
+- `+k [pass]`
+  - set a password for the channel which users must enter to join
+- `+l [number]`
+  - set a limit on the number of users who are allowed in the channel at the same time
+- `+m`
+  - prevent users who are not opped/hopped/voiced from talking
+- `+R`
+  - set the channel so only registered nicks are allowed in
+- `+M`
+  - set the channel so only registered nicks are allowed to talk
+- `+S`
+  - strip formatting from messages, rendering them as plaintext
+- `+c`
+  - block messages containing color codes
+- `+i`
+  - a user must be invited to join the channel
+- `+N`
+  - no nick changes permitted in the channel
+
 ## Clients
 - HexChat
 - Irssi
