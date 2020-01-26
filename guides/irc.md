@@ -80,6 +80,13 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
 - `/mode [nickname] +/-attributes [data]`
   - setting user's modes (for current channel only)
 
+## Ban User
+
+- `/mode [channel] +b [hosts]`
+  - `hosts` take the following form: `nickname!userid@hostname`
+- Use `/whois`, `/whowas` or `/who` to find the information necessary for a ban.
+- `*` is a wildcard and can replace `nickname`, `userid`, parts of nickname or `userid`, `hostname` or a segment of a `hostname`.
+
 ## Channel Management (ChanServ)
 
 All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depending on your client, `/cs` or `/chanserv` may not work.
