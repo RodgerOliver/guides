@@ -60,6 +60,19 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
 - `/ns set [password] [new_password]`
   - change your password. **NOTE:** Under no circumstances should you change your nick to the letter O followed by 8 digit
 
+### User Modes
+
+- `+q`
+  - user is owner of the current channel (prefix `~` on UnrealIRCd, usually `@` elsewhere)
+- `+a`
+  - user is an admin (SOP) on the current channel (prefix `&` on UnrealIRCd, usually `@` elsewhere).
+- `+o`
+  - user is an operator (AOP) on the current channel (prefix `@`).
+- `+h`
+  - user is a half-op on the current channel (prefix `%`).
+- `+v`
+  - user has voice on the current channel (prefix `+`).
+
 ## Channel Management (ChanServ)
 
 All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depending on your client, `/cs` or `/chanserv` may not work.
