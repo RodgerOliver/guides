@@ -34,8 +34,10 @@ Inside the networks (servers) there are channels (rooms).
   - send a private message to a user
 - `/query [nickname] [message]`
   - send a private message to a user and open a private chat window
+- `/privmsg [nickname] [message]`
+  - send a private message to nickname that will open a query window for the other user
 - `/notice [nickname] [message]`
-  - send a notice to a user, like `/msg`, but usually makes a sound
+  - send a notice to a user, like `/msg`, but usually makes a sound, doesn't open a query window for either users
 - `/whois [nickname]`
   - show information about a user (this action is not visible to the user)
 - `/whowas [nickname]`
