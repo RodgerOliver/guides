@@ -80,12 +80,25 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
 - `/mode [nickname] +/-attributes [data]`
   - setting user's modes (for current channel only)
 
-## Ban User
+### Ban User
 
 - `/mode [channel] +b [hosts]`
   - `hosts` take the following form: `nickname!userid@hostname`
 - Use `/whois`, `/whowas` or `/who` to find the information necessary for a ban.
 - `*` is a wildcard and can replace `nickname`, `userid`, parts of nickname or `userid`, `hostname` or a segment of a `hostname`.
+
+#### Examples
+
+- `bob!*@*`
+  - prevent anyone with the nick `bob` from joining
+- `*bob*!*`
+  - prevent anyone whose nick contains `bob` from joining
+- `mark!*elc@*`
+  - prevent anyone with the nick `mark` and the userid `elc` from joining
+- `*!*@host.com`
+  - prevent anyone with the host `host.com` from joining
+- `*!*@*`
+  - ban everyone
 
 ## Channel Management (ChanServ)
 
