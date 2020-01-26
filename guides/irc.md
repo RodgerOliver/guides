@@ -64,10 +64,36 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
 
 All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depending on your client, `/cs` or `/chanserv` may not work.
 
-- `/cs register #[channel_name]`
-  - register channel
+- `/cs register [channel] [password] [description]`
+  - register the current channel to the current nick and sets its password and description
 - `/cs op #[channel_name]`
   - return as op (channel operator / admin) of channel
+- `/cs identify [channel] [password]`
+  - identify you as the channel's founder (op) and gives you founder-level privileges
+- `/cs drop #channel [dropcode]`
+  - un-register the current channel to you
+- `/cs set [channel] founder [nickname]`
+  - set new founder to the current channel's founder
+- `/cs set [channel] [password] [new_password]`
+  - change the current channel's password
+- `/cs set [channel] desc [description]`
+  - change the current channel's description
+- `/cs set [channel] url [url_address]`
+  - associate a URL with the channel
+- `/cs set [channel] [email_address]`
+  - associate an email address with the channel
+
+### Other Channel Commands
+- `/cs set [channel] mlock modes`
+  - lock the channel's modes, just + unlocks all
+- `/cs set [channel] secureops [on|off]`
+  - keep everyone except aops, sops, and the founder from becoming ops
+- `/cs set [channel] keeptopic [on|off]`
+  - maintain the topic even if everyone leaves
+- `/cs set [channel] enforce [on|off]`
+  - restore op/halfop/voice if a person with op/halfop/voice gets de-opped/halfopped/voiced
+- `/cs set [channel] leaveops [on|off]`
+  - whether or not to allow the first person who join the channel to get ops
 
 ## Clients
 - HexChat
