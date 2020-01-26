@@ -50,9 +50,15 @@ Inside the networks (servers) there are channels (rooms).
 All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your client, `/ns` may not work.
 
 - `/ns register [password] [email]`
-  - registers your current nick with NickServ with the chosen password and binds it to an e-mail address (optional).
+  - register current nick and binds it to an e-mail address (optional).
 - `/ns identify [password]`
-  - identifies your nick to NickServ using the password you set. If you have a nick that's been registered, and you don't i
+  - identify (login) your nick to NickServ using the password
+- `/ns recover [nickname] [password]`
+  - kill (forcibly disconnects) someone who has your registered nick
+- `/ns ghost [nickname] [password]`
+  - terminate a "ghost" IRC session that's using your nickname
+- `/ns set [password] [new_password]`
+  - change your password. **NOTE:** Under no circumstances should you change your nick to the letter O followed by 8 digit
 
 ## Channel Management (ChanServ)
 
