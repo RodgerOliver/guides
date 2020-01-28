@@ -178,6 +178,16 @@ Set a mode to the channel with: `/mode [channel] +/-[mode]`
 - `+N`
   - no nick changes permitted in the channel
 
+## Send Files
+- `/dcc send [nick] [file]`
+  - send file to user
+- `/dcc get [nick] [file]`
+  - download file sent by a user
+- `/dcc close send [nick] [file]`
+  - stop sending file to user
+- `/dcc`
+  - status of current transfers
+
 ## Clients
 - HexChat
 - Irssi
