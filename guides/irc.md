@@ -6,6 +6,8 @@ Inside the networks (servers) there are channels (rooms).
 
 ## Basics
 ### Network & Server
+- `/server list`
+  - list servers
 - `/connect [network]`
   - connect to network
 - `/server [server]`
