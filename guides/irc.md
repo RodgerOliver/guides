@@ -144,7 +144,7 @@ All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depend
   - associate an email address with the channel
 
 ### Other Channel Commands
-- `/cs set [channel] mlock modes`
+- `/cs set [channel] mlock [modes]`
   - lock the channel's modes, just + unlocks all
 - `/cs set [channel] secureops [on|off]`
   - keep everyone except aops, sops, and the founder from becoming ops
