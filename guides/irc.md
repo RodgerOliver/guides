@@ -7,6 +7,10 @@ Inside the networks (servers) there are channels (rooms).
 ## Help
 - `/help [command]`
   - view help for command
+- `/msg NickServ help <command>`
+  - view help for command with NickServ
+- `/msg ChanServ help <command>`
+  - view help for command with ChanServ
 
 ## Basics
 ### Network & Server
