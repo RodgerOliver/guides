@@ -126,8 +126,10 @@ All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depend
   - return information about the channel
 - `/cs register [channel] [password] [description]`
   - register the current channel to the current nick and sets its password and description
-- `/cs op #[channel_name]`
-  - return as op (channel operator / admin) of channel
+- `/cs op #[channel_name] [nick]`
+  - give op (channel operator / admin) permission on channel
+- `/cs deop #[channel_name] [nick]`
+  - remove op (channel operator / admin) permission on channel
 - `/cs recover [channel]`
   - regain control of your channel
 - `/cs drop #channel [dropcode]`
