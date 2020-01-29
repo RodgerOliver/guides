@@ -122,6 +122,8 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
 
 All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depending on your client, `/cs` or `/chanserv` may not work.
 
+- `/cs info [channel]`
+  - return information about the channel
 - `/cs register [channel] [password] [description]`
   - register the current channel to the current nick and sets its password and description
 - `/cs op #[channel_name]`
