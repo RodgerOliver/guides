@@ -75,6 +75,8 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
   - terminate a "ghost" IRC session that's using your nickname
 - `/ns set [password] [new_password]`
   - change your password. **NOTE:** Under no circumstances should you change your nick to the letter O followed by 8 digit
+- `/ns set enforce [on|off]`
+  - kick user with your nick the doesn't identifies
 
 ### User Modes
 
