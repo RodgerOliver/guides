@@ -154,6 +154,8 @@ All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depend
   - restore op/halfop/voice if a person with op/halfop/voice gets de-opped/halfopped/voiced
 - `/cs set [channel] leaveops [on|off]`
   - whether or not to allow the first person who join the channel to get ops
+- `/cs set [channel] guard [on|off]`
+  - user ChanServ will guard your channel
 
 ### Channel Modes
 
