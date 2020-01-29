@@ -77,6 +77,8 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
   - change your password. **NOTE:** Under no circumstances should you change your nick to the letter O followed by 8 digit
 - `/ns set enforce [on|off]`
   - kick user with your nick the doesn't identifies
+- `/ns drop [nick] [password]`
+  - un-register nick
 
 ### User Modes
 
