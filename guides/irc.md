@@ -11,6 +11,8 @@ Inside the networks (servers) there are channels (rooms).
   - view help for command with NickServ
 - `/msg ChanServ help <command>`
   - view help for command with ChanServ
+- `/set <variable> [value]`
+  - show variables of the client or set them
 
 ## Basics
 ### Network & Server
