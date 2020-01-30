@@ -75,8 +75,6 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
   - register current nick and binds it to an e-mail address (optional).
 - `/ns identify [password]`
   - identify (login) your nick to NickServ using the password
-- `/ns recover [nickname] [password]`
-  - kill (forcibly disconnects) someone who has your registered nick
 - `/ns ghost [nickname] [password]`
   - terminate a "ghost" IRC session that's using your nickname
 - `/ns set [password] [new_password]`
