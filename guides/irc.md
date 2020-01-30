@@ -211,3 +211,4 @@ Set a mode to the channel with: `/mode [channel] +/-[mode]`
 ## Clients
 - HexChat
 - Irssi
+- WeeChat
