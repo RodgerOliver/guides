@@ -16,12 +16,12 @@ Inside the networks (servers) there are channels (rooms).
 
 ## Basics
 ### Network & Server
+- `/server add [server]`
+  - add a server to connect to
 - `/server list`
   - list servers
 - `/connect [network]`
   - connect to network
-- `/server [server]`
-  - connect to server
 - `/links`
   - list all servers on the current network. May be disabled "for security reasons"
 - `/quit <message>`
