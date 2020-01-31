@@ -32,7 +32,7 @@ Inside the networks (servers) there are channels (rooms).
   - list all channels on the current network
 - `/join [channel]`
   - join / create channel to talk (channels generally start with `#`)
-- `/part [channel]`
+- `/part <channel> <message>`
   - leave channel
 - `/topic [channel] [new_topic]`
   - change the topic for a channel that you are on
@@ -58,10 +58,10 @@ Inside the networks (servers) there are channels (rooms).
   - attempt to resolve the IP address of a user
 - `/ping [nickname]`
   - ping a user (this action is visible to the specified user)
-- `/me action`
-  - print "[yourname] action"
+- `/me [action]`
+  - print "[yourname] [action]"
 
-### Other General Commands
+### Other Basics Commands
 - `/invite [nickname] [channel]`
   - invite a nickname to a channel that you are on
 - `/away <message>`
@@ -80,49 +80,9 @@ All nickserv commands begin with `/ns` or `/msg NickServ`. Depending on your cli
 - `/ns set [password] [new_password]`
   - change your password. **NOTE:** Under no circumstances should you change your nick to the letter O followed by 8 digit
 - `/ns set enforce [on|off]`
-  - kick user with your nick the doesn't identifies
+  - kick user with your nick the doesn't identify
 - `/ns drop [nick] [password]`
   - un-register nick
-
-### User Modes
-
-- `+q`
-  - user is owner of the current channel (prefix `~` on UnrealIRCd, usually `@` elsewhere)
-- `+a`
-  - user is an admin (SOP) on the current channel (prefix `&` on UnrealIRCd, usually `@` elsewhere).
-- `+o`
-  - user is an operator (AOP) on the current channel (prefix `@`).
-- `+h`
-  - user is a half-op on the current channel (prefix `%`).
-- `+v`
-  - user has voice on the current channel (prefix `+`).
-
-### Kick User
-
-- `/kick [channel] [nickname] [reason]`
-  - temporarily remove user from channel
-- `/mode [nickname] +/-attributes [data]`
-  - setting user's modes (for current channel only)
-
-### Ban User
-
-- `/mode [channel] +b [hosts]`
-  - `hosts` take the following form: `nickname!userid@hostname`
-- Use `/whois`, `/whowas` or `/who` to find the information necessary for a ban.
-- `*` is a wildcard and can replace `nickname`, `userid`, parts of nickname or `userid`, `hostname` or a segment of a `hostname`.
-
-#### Examples
-
-- `bob!*@*`
-  - prevent anyone with the nick `bob` from joining
-- `*bob*!*`
-  - prevent anyone whose nick contains `bob` from joining
-- `mark!*elc@*`
-  - prevent anyone with the nick `mark` and the userid `elc` from joining
-- `*!*@host.com`
-  - prevent anyone with the host `host.com` from joining
-- `*!*@*`
-  - ban everyone
 
 ## Channel Management (ChanServ)
 
@@ -165,7 +125,43 @@ All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depend
 - `/cs set [channel] guard [on|off]`
   - user ChanServ will guard your channel
 
-### Channel Modes
+## Channel Operator Actions
+### Kick User
+
+- `/kick [channel] [nickname] [reason]`
+  - temporarily remove user from channel
+
+### Ban User
+
+- `/mode [channel] +b [hosts]`
+  - `hosts` take the following form: `nickname!userid@hostname`
+- Use `/whois`, `/whowas` or `/who` to find the information necessary for a ban.
+- `*` is a wildcard and can replace `nickname`, `userid`, parts of nickname or `userid`, `hostname` or a segment of a `hostname`.
+
+#### Examples
+
+- `bob!*@*`
+  - prevent anyone with the nick `bob` from joining
+- `*bob*!*`
+  - prevent anyone whose nick contains `bob` from joining
+- `mark!*elc@*`
+  - prevent anyone with the nick `mark` and the userid `elc` from joining
+- `*!*@host.com`
+  - prevent anyone with the host `host.com` from joining
+- `*!*@*`
+  - ban everyone
+
+## Send Files
+- `/dcc send [nick] [file]`
+  - send file to user
+- `/dcc get [nick] [file]`
+  - download file sent by a user
+- `/dcc close send [nick] [file]`
+  - stop sending file to user
+- `/dcc`
+  - status of current transfers
+
+## Channel Modes
 
 Set a mode to the channel with: `/mode [channel] +/-[mode]`
 
@@ -198,15 +194,20 @@ Set a mode to the channel with: `/mode [channel] +/-[mode]`
 - `+N`
   - no nick changes permitted in the channel
 
-## Send Files
-- `/dcc send [nick] [file]`
-  - send file to user
-- `/dcc get [nick] [file]`
-  - download file sent by a user
-- `/dcc close send [nick] [file]`
-  - stop sending file to user
-- `/dcc`
-  - status of current transfers
+## User Modes
+
+Set a mode to the user with: `/mode [channel] +/-[mode] [nick]` or `/mode [nick] +/-[mode]` or `/mode +/-[mode] [nick]`
+
+- `+q`
+  - user is owner of the current channel (prefix `~` on UnrealIRCd, usually `@` elsewhere)
+- `+a`
+  - user is an admin (SOP) on the current channel (prefix `&` on UnrealIRCd, usually `@` elsewhere).
+- `+o`
+  - user is an operator (AOP) on the current channel (prefix `@`).
+- `+h`
+  - user is a half-op on the current channel (prefix `%`).
+- `+v`
+  - user has voice on the current channel (prefix `+`).
 
 ## Clients
 - HexChat
