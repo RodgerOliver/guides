@@ -165,6 +165,8 @@ All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depend
 
 Set a mode to the channel with: `/mode [channel] +/-[mode]`
 
+All channel modes will be lost when a channel becomes empty. Enable GUARD to preserve modes.
+
 - `+n`
   - disallow external messages
 - `+t`
