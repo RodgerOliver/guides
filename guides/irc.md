@@ -172,44 +172,66 @@ All channel modes will be lost when a channel becomes empty. Enable GUARD to pre
 - `+t`
   - only op/hops can set the topic
 - `+p`
-  - set the channel as invisible in /list
+  - set the channel as invisible in `/list` and disable `/knock` to channel
 - `+s`
   - set the channel as invisible in /list and /whois
 - `+i`
-  - set the channel as closed unless the person was invited
-- `+k [pass]`
-  - set a password for the channel which users must enter to join
-- `+l [number]`
-  - set a limit on the number of users who are allowed in the channel at the same time
+  - set the channel as closed unless the user was invited or matches a `+I` criteria
 - `+m`
   - prevent users who are not opped/hopped/voiced from talking
-- `+R`
+- `+z`
+  - messages blocked by `+mbq` are sent to the ops
+- `+g`
+  - anyone on the channel can invite new users
+- `+r`
   - set the channel so only registered nicks are allowed in
-- `+M`
-  - set the channel so only registered nicks are allowed to talk
 - `+S`
   - strip formatting from messages, rendering them as plaintext
 - `+c`
   - block messages containing color codes
-- `+i`
-  - a user must be invited to join the channel
-- `+N`
-  - no nick changes permitted in the channel
+- `+k [pass]`
+  - set a password for the channel which users must enter to join
+- `+l [number]`
+  - set a limit on the number of users who are allowed in the channel at the same time
+- `+L`
+  - large ban list (Only server OPs)
+- `+P`
+  - channel permanent, doen't disappear when empty (Only server OPs)
+- `+C`
+  - all CTCP (Client To Client Protocol) messages to the channel, except `action`, are disallowed
 
 ## User Modes
+### Inside Server (for current user)
 
-Set a mode to the user with: `/mode [channel] +/-[mode] [nick]` or `/mode [nick] +/-[mode]` or `/mode +/-[mode] [nick]`
+Set a mode to the user with: `/mode [nick] +/-[mode]`
 
+- `+g`
+  - choose to accept external private messages with `/accept`
+- `+i`
+  - hide user from `/whois` by normal users
+- `+R`
+  - ignore private messages
+- `+w`
+  - subscribes you to `/wallops` messages from freenode staff
+- `+Z`
+  - set automatically by the network when you connect via SSL/TLS
+
+### Inside Channel (only OPs can change)
+
+Set a mode to the user with: `/mode <channel> +/-[mode] [nick]`
+
+- `+o`
+  - user is an operator (AOP) on the current channel (prefix `@`)
+- `+v`
+  - user has voice on the current channel (prefix `+`)
+
+### Inside Server (as OPER)
+- `+h`
+  - user is a half-op on the current channel (prefix `%`)
 - `+q`
   - user is owner of the current channel (prefix `~` on UnrealIRCd, usually `@` elsewhere)
 - `+a`
   - user is an admin (SOP) on the current channel (prefix `&` on UnrealIRCd, usually `@` elsewhere).
-- `+o`
-  - user is an operator (AOP) on the current channel (prefix `@`).
-- `+h`
-  - user is a half-op on the current channel (prefix `%`).
-- `+v`
-  - user has voice on the current channel (prefix `+`).
 
 ## Clients
 - HexChat
