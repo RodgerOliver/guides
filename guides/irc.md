@@ -216,22 +216,22 @@ Set a mode to the user with: `/mode [nick] +/-[mode]`
 - `+Z`
   - set automatically by the network when you connect via SSL/TLS
 
-### Inside Channel (only OPs can change)
+### Inside Channel
 
 Set a mode to the user with: `/mode <channel> +/-[mode] [nick]`
 
-- `+o`
-  - user is an operator (AOP) on the current channel (prefix `@`)
+**NOTE:** some modes may not be available in all networks
+
 - `+v`
   - user has voice on the current channel (prefix `+`)
-
-### Inside Server (as OPER)
 - `+h`
   - user is a half-op on the current channel (prefix `%`)
-- `+q`
-  - user is owner of the current channel (prefix `~` on UnrealIRCd, usually `@` elsewhere)
+- `+o`
+  - user is an operator (AOP) on the current channel (prefix `@`)
 - `+a`
   - user is an admin (SOP) on the current channel (prefix `&` on UnrealIRCd, usually `@` elsewhere).
+- `+q`
+  - user is owner of the current channel (prefix `~` on UnrealIRCd, usually `@` elsewhere)
 
 ## Clients
 - HexChat
