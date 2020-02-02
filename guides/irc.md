@@ -237,3 +237,9 @@ Set a mode to the user with: `/mode <channel> +/-[mode] [nick]`
 - HexChat
 - Irssi
 - WeeChat
+
+### Irssi
+- `/network add -autosendcmd '/msg nickserv identify [nick] [password]'`
+  - identify when connect to the network
+- `/server modify -auto [server]`
+  - autoconnect to server, like `chat.freenode.net`
