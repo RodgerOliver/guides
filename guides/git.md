@@ -9,8 +9,6 @@ Git is a 'version control system' that controls the changes of the files.
 
 > HEAD~1: commit hash of the previous commit from HEAD.
 
-> HEAD^1: commit hash of the next commit from HEAD.
-
         B
         | F
         | |
