@@ -416,6 +416,38 @@ Delete tag locally.
 
 Delete tag from the remote.
 
+## Submodules
+A submodule is a git repo inside another repo. It can be used for big features inside a project that requires another team, or when using a library.
+
+```
+Main Repo
+
+├── README.md
+├── lib (another repo)
+│   └── index.js
+└── main.js
+```
+
+The `.gitmodules` file is created when submodules are added to keep track of all submodules.
+
+When using a submodule, the main repo only knows the last commit of the submodule, as a reference. If it is updated you just have to checkout the latest commit in the submodule.
+
+`git add <submodule url> <path>`
+
+Clone a repo with all submodules.
+
+`git submodule update --init`
+
+Update submodule or initiate it.
+
+`git clone --recursive <repo url>`
+
+Clone a repo with all submodules.
+
+`git submodule foreach '<command>`
+
+Execute a command for every submodule.
+
 ## Working Trees
 Working trees can be added so you can have two folders linked and checked out in different branches
 without the need to stash or clone the repo again.
