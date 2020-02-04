@@ -183,6 +183,7 @@ All channel modes will be lost when a channel becomes empty. Enable GUARD to pre
   - set the channel as invisible in /list and /whois
 - `+i`
   - set the channel as closed unless the user was invited or matches a `+I` criteria
+  - if you can't rejoin to your channel, invite yourself with `/cs invite [channel] <nick>`
 - `+I`
   - allow a user to join a `+i` channel without an invite based on a `nick!user@host` match
 - `+m`
