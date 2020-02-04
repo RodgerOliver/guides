@@ -221,6 +221,8 @@ Set a mode to the user with: `/mode [nick] +/-[mode]`
   - ignore private messages
 - `+w`
   - subscribes you to `/wallops` messages from freenode staff
+- `+x`
+  - hide your external ip from other users
 - `+Z`
   - set automatically by the network when you connect via SSL/TLS
 
