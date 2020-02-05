@@ -16,6 +16,9 @@ Inside the networks (servers) there are channels (rooms).
 
 ## Basics
 ### Network & Server
+
+An IRC network consists in one or more IRC servers that are linked together.
+
 - `/server add [server]`
   - add a server to connect to
 - `/server list`
