@@ -119,6 +119,8 @@ All ChanServ commands begin with `/cs` or `/chanserv` or `/msg ChanServ`. Depend
   - associate a URL with the channel
 - `/cs set [channel] [email_address]`
   - associate an email address with the channel
+- `/cs flags [channel]`
+  - list flags of the channel (flags can set user permissions)
 
 ### Other Channel Commands
 - `/cs set [channel] mlock [modes]`
