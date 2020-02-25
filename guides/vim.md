@@ -429,6 +429,7 @@ Create notes in Vim.
 - `=`: add header level.
 - `-`: remove header level.
 - `+`: create links.
+- `:VWS`: search for terms in notes or calendar.
 
 #### Diary
 Diary of VimWiki.
@@ -448,7 +449,7 @@ Live preview of markdown.
 
 - `sudo npm -g install instant-markdown-d`
 - `let g:instant_markdown_autostart = 0`
-- `nnoremap <leader>p :InstantMarkdownPreview<CR>`
+- `nnoremap <leader>pm :InstantMarkdownPreview<CR>`
 
 ### Debug PHP
 - Install php-xdebug.
