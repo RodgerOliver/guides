@@ -85,6 +85,10 @@ Merge `trunk` in current branch. **NOTE:** merge only joins code, commit after i
 
 Merge branch to `trunk`.
 
+`svn diff`
+
+Show current diff.
+
 `svn info`
 
 Return information about the repository.
