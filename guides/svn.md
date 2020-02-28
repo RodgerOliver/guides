@@ -107,3 +107,13 @@ Return information about the repository.
   - edit `file` to resolve the conflict
   - `svn resolve file`
   - commit
+
+## Stash
+
+`svn diff > [patch_file]; svn revert -R .`
+
+Stash current changes.
+
+`patch -p0 < [patch_file]`
+
+Stash apply.
