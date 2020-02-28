@@ -64,3 +64,46 @@ Show status of the working directory.
 `svn commit -m [message]`
 
 Commit changes. **NOTE:** commits are sent directly to the server, there is no need to push.
+
+`svn copy [repo_url]/trunk [repo_url]/branches/[branch_name]`
+
+Create a branch.
+
+`svn up`
+
+Update working copy with repo (pull).
+
+`svn up -r [revision_num]`
+
+Update working copy to the revision number.
+
+`svn merge ^/trunk`
+
+Merge `trunk` in current branch. **NOTE:** merge only joins code, commit after it.
+
+`svn merge --reintegrate ^/branches/[branch_name]`
+
+Merge branch to `trunk`.
+
+`svn info`
+
+Return information about the repository.
+
+## Working With Branches
+- update trunk
+- create branch
+- commit
+- update branch with trunk
+- merge branck into trunk
+- delete branch
+
+### Conflicts
+- postpone
+  - 3 files are created
+  - `file.mine` is the local file of the branch
+  - `file.r14` is the previous change of the repo
+  - `file.r15` is the current file of the repo
+  - `file` will contain markers to resolve the conflict
+  - edit `file` to resolve the conflict
+  - `svn resolve file`
+  - commit
