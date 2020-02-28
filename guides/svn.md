@@ -5,6 +5,23 @@ It is decentralized, and based on the client-server topology.
 
 To get help use `svn help [cmd]`.
 
+# Folder Structure
+Trunk is where all the stable code resides.
+
+```
+Main Repo
+
+├── branches/
+│   └── taks1/
+│       └── README.md
+│       └── CONTRIB.md
+├── tags/
+│   └── v1.0/
+│   └── v2.0/
+└── trunk/
+    └── README.md
+```
+
 # Server
 To enable same default settings to the repository go to `conf/svnserve.conf`.
 
