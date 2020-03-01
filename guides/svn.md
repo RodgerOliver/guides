@@ -133,3 +133,24 @@ Stash apply.
 - `svn cat -r [revision_num] [file]`: show content of a file on that revision.
   - `svn cat ^/trunk/[file]@[revision_num] > [file]`
 - `svn cp ^/trunk/[file]@[revision_num] .`: recover a deleted file.
+
+## SVN Properties
+SVN properties are metadata associated with files or folders that are versioned.
+
+- `svn:executable`: executable files
+- `svn:mime-type`: indicate type of file.
+- `svn:needs-lock`: make file read-only.
+- `svn:global-ignores`: contain list of ignored file patterns.
+  - this property is associated just for folders.
+- `svn:auto-props`: contain property patterns for file patterns.
+  - this property is associated just for folders.
+  - `*.sh = svn:executable=*`
+
+### Commands To Edit Properties
+- `svn propset`: define a property
+- `svn proplist`: list properties
+- `svn propget`: get value of a property
+- `svn propdel`: delete a property
+- `svn propedit`: edit a property
+- `svn propset svn:auto-props "*.sh = svn:executable=*" .`
+  - this is an example of auto-props set in the root directory
