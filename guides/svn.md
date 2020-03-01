@@ -89,6 +89,10 @@ Merge branch to `trunk`.
 
 Show current diff.
 
+`svn revert -R .`
+
+Revert all non-committed changes on the working directory.
+
 `svn info`
 
 Return information about the repository.
@@ -121,3 +125,11 @@ Stash current changes.
 `patch -p0 < [patch_file]`
 
 Stash apply.
+
+## Revert Committed Changes
+
+- `svn log [file]`: show revisions that modified a file.
+- `svn log -v | grep [file]`: search for file.
+- `svn cat -r [revision_num] [file]`: show content of a file on that revision.
+  - `svn cat ^/trunk/[file]@[revision_num] > [file]`
+- `svn cp ^/trunk/[file]@[revision_num] .`: recover a deleted file.
