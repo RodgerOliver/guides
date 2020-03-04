@@ -12,7 +12,7 @@ Trunk is where all the stable code resides.
 Main Repo
 
 ├── branches/
-│   └── taks1/
+│   └── tasks1/
 │       └── README.md
 │       └── CONTRIB.md
 ├── tags/
@@ -102,7 +102,7 @@ Return information about the repository.
 - create branch
 - commit
 - update branch with trunk
-- merge branck into trunk
+- merge branch into trunk
 - delete branch
 
 ### Conflicts
