@@ -154,3 +154,14 @@ SVN properties are metadata associated with files or folders that are versioned.
 - `svn propedit`: edit a property
 - `svn propset svn:auto-props "*.sh = svn:executable=*" .`
   - this is an example of auto-props set in the root directory
+  - after `propset` the changes must be committed
+
+## Lock
+When a user locks a file no one can change or lock it. This action is saved in a separate location in the repo and it not committed.
+
+When a commit is made all locks are released.
+
+  - `svn propset svn:auto-props "*.jpg = svn:needs-lock" .`: set permissions so the file can only be edited if locked
+  - `svn lock file.png`: lock file
+  - `svn unlock file.png`: unlock file
+  - use the `--force` flag to break or steal a locked file
