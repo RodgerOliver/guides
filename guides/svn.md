@@ -65,9 +65,17 @@ Show status of the working directory.
 
 Commit changes. **NOTE:** commits are sent directly to the server, there is no need to push.
 
-`svn copy [repo_url]/trunk [repo_url]/branches/[branch_name]`
+`svn copy ^/trunk ^/branches/[branch_name]`
 
 Create a branch.
+
+`svn switch ^/branches/[branch_name]`
+
+Switch branch of working copy.
+
+`svn cp ^/trunk@[rev_num] ^/tags/[tag_name] -m [commit message]`
+
+Create a tag.
 
 `svn up`
 
