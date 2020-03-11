@@ -74,6 +74,20 @@ Tasks must have only one solid objective and follow the following progress: `ope
 ## VCS
 VCS stands for Version Control System and it is used to help the development of different features at the same time, keep various version of the project and have a history of the changes.
 
+Changes registered on the VCS must be fully functional, meaning that they must be tested and working.
+
+The VCS is linked with the Issue Tracker by the ID of the task. This way they can be linked providing the tracking of the progress of a task. The description of each commit (or branch) should contain the ID of the task with a small description, to see right away the scope of the task.
+
+The main goals are:
+- to keep the history of changes
+- to control the concurrence
+- to keep different versions of the project
+
+VCS answer these questions:
+- What was changed?
+- When it was changed?
+- Who made the change?
+
 There are two types of VCS:
 - Centralized
   - has only one central repository
