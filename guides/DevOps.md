@@ -6,7 +6,14 @@ deployment and management of the software.
 
 DevOps is NOT tools, but they are used to apply the culture. There is no standards, there is the best way that your teams communicate and work together.
 
-This culture grew out of the Agile software development movement. Agile seeks to develop software in small, frequent cycles.
+This culture grew out of the Agile software development movement. Agile seeks to develop software in small, frequent cycles, in opposition to the Waterfall model where a bunch of features are deployed at the same time.
+
+A similar workflow is the **Dark Launching Technique** made by Facebook. This workflow is divide in:
+- Continuous Development
+- Continuous Testing
+- Continuous Integration
+- Continuous Deployment
+- Continuous Monitoring
 
 ## Culture
 
