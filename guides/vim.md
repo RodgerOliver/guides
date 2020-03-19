@@ -430,6 +430,7 @@ Create notes in Vim.
 - `-`: remove header level.
 - `+`: create links.
 - `:VWS`: search for terms in notes or calendar.
+  - use `:lnext` and `:lprev` to navigate
 
 #### Diary
 Diary of VimWiki.
