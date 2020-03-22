@@ -376,6 +376,23 @@ Vim has a built in support for ftp. To connect type `vim ftp://user@host/path/`.
 - `:args **/*.php`
 - `:argdo execute "normal gg=G" | update`
 
+## Spell Checking
+- `:set spell`: activate spell check
+- `:set spellang=[lang]`: set spell language
+  - the languages available are in `$VIM` folder
+- `:spellinfo`: return information about the spell
+- `]s`: jump to next misspelled word
+- `[s`: jump to previous misspelled word
+- `z=`: show suggestions for current word
+- `zg`: add word as good (global file)
+  - `zug`: remove word as good
+- `zG`: add word as good (local file)
+  - `zuG`: remove word as good
+- `zw`: add word as bad (global file)
+  - `zuw`: remove word as bad
+- `zW`: add word as bad (local file)
+  - `zuW`: remove word as bad
+
 ## [Vim Scripts](https://github.com/christoomey/your-first-vim-plugin)
 
 ## Plugins
