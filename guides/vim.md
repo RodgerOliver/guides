@@ -455,6 +455,7 @@ Diary of VimWiki.
 - `<leader>wi`: open diary index.
 - `<leader>w<leader>i`: generate diary links.
 - `<leader>w<leader>w`: open diary on current day.
+- `<Ctrl><Up-n-Down-Arrow>`: go up or down in the calendar
 - `:Calendar`: open calendar.
 
 ### Commentary.vim
