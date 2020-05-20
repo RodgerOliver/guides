@@ -432,7 +432,7 @@ The `.gitmodules` file is created when submodules are added to keep track of all
 
 When using a submodule, the main repo only knows the last commit of the submodule, as a reference. If it is updated you just have to checkout the latest commit in the submodule.
 
-`git add <submodule url> <path>`
+`git submodule add <submodule url> <path>`
 
 Clone a repo with all submodules.
 
