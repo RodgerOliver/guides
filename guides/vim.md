@@ -564,3 +564,9 @@ augroup END
 ### Find File
 - `:set path+=**`
 - `:find [file]`: find file from the root path.
+
+## Other
+
+### Go To Matching HTML Tag
+- `vat`: select everything inside tag
+- `o | O`: jump to beginning and end of selection forwards or backwards
