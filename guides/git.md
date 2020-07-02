@@ -128,6 +128,10 @@ Show changes made on that commit.
 
 Show changes made on that commit.
 
+`git difftool [branch]`
+
+Compare working directory with last commit, or branch, using the default tool for diff.
+
 ## Commit
 
 `git commit -m "[message]"`
