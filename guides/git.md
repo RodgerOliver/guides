@@ -480,6 +480,14 @@ Remove working tree.
 - Create a `.gitignore` file and add the name of the file or folder to ignore. This is recursive.
 - To ignore files without creating a `.gitignore` put their paths inside `.git/info/exclude`.
 
+## Cleaning The Repo
+
+- `git gc --auto`: enable auto-gc mode
+- `git reflog expire --expire=now --expire-unreachable=now --all`: clear the reflog
+- `git gc --prune --aggressive`: remove unreferenced objects
+- `git prune --dry-run --verbose`: remove commits detached from branches
+- `git gc --prune=now`: remove remaining unreferenced object
+
 ## Fork
 
 ### Sync A Fork
