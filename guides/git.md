@@ -219,9 +219,13 @@ Remove remote branch.
 
 Change to the master branch and merge the changes.
 
+`git checkout [remote branch]`
+
 `git checkout --track [remote]/[remote branch]`
 
-Get remote branch. `git checkout [remote branch]` also works.
+`git branch --track [new local branch] [remote]/[remote branch]`
+
+Get remote branch. `[new local branch]` generally is equal to `[remote branch]`.
 
 ### Merge Branches
 
