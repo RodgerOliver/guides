@@ -268,7 +268,7 @@ git fetch origin
 git checkout -b develop origin/develop
 // make the changes here
 git checkout master
-git merge develop
+git merge --no-ff develop
 git push origin master
 ```
 
