@@ -66,3 +66,5 @@ Start a webserver on the container.
 `docker commit [container id] pk/ubuntu:1.0`
 
 Commit (create) an image to save the changes made to it.
+
+`docker cp [container id]:/file/path/within/container /host/path/target`
